@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/adscope_textSize_15" android:textColor="#ff8c8c8c" android:id="@id/addeci_content_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/adscope_dimen_15" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.beizi.fusion.asnp.adn.ad.ad.nativead.render.view.asnp.prefab.BasicWebView android:id="@id/addeci_content_wb" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

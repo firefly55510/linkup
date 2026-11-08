@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huanxiao.sdk.widget.ADContentView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:background="@color/hx_black" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/iv_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <include android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/v_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginHorizontal="@dimen/dp_16" layout="@layout/hx_layout_close" />
+        </FrameLayout>
+        <com.huanxiao.sdk.widget.ADContentView android:id="@id/v_button" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/hx_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huanxiao.sdk.widget.RoundedImageView android:id="@id/iv_icon" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_70" android:layout_marginTop="@dimen/dp_35" />
+                <TextView android:textSize="@dimen/sp_17" android:textStyle="bold" android:textColor="@color/hx_2a2a2a" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dp" />
+                <com.huanxiao.sdk.shape.view.ShapeTextView android:textSize="@dimen/sp_15" android:textStyle="bold" android:textColor="@color/hx_white" android:gravity="center" android:id="@id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_17" android:text="立即下载" android:layout_marginHorizontal="42.0dp" android:paddingVertical="@dimen/dp_10" app:hx_shape_radius="@dimen/dp_5" app:hx_shape_solidGradientEndColor="@color/hx_17adfa" app:hx_shape_solidGradientOrientation="topToBottom" app:hx_shape_solidGradientStartColor="@color/hx_017dfe" />
+            </LinearLayout>
+        </com.huanxiao.sdk.widget.ADContentView>
+    </LinearLayout>
+    <include android:layout_gravity="right|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" layout="@layout/hx_layout_ad_native_flag" />
+</com.huanxiao.sdk.widget.ADContentView>

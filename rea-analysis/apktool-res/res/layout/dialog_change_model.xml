@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/back" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/radius_10_1e1" android:padding="20.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对话模式" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ordinary_model" android:background="@drawable/radius_10_2c2" android:paddingLeft="16.0dp" android:paddingTop="14.0dp" android:paddingRight="16.0dp" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="普通模式（日常对话，快速响应）" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp">
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_9" android:id="@id/tv_ordinary_model_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对话简洁，角色主要以单句回应，适合日常对话" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_ordinary_model_selected" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="50.0dp" android:layout_marginTop="15.0dp" android:src="@drawable/ic_change_model_false" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_e" android:id="@id/tv_continue_count_ordinary" android:background="@drawable/radius_5_black_a30" android:paddingLeft="8.0dp" android:paddingTop="3.0dp" android:paddingRight="8.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="1/续聊次数" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/love_model" android:background="@drawable/radius_10_2c2" android:paddingLeft="16.0dp" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+            <LinearLayout android:gravity="center" android:layout_gravity="right" android:id="@id/love_model_lock_layout" android:background="@drawable/radius_10_313" android:padding="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/ic_model_lock" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffb0b3b8" android:id="@id/tv_love_model_lock_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="0/3视频解锁" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="爱意模式（爱意角力，由你掌控）" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp">
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_9" android:id="@id/tv_love_model_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="私人空间，由你掌控话题边界与极致情感张力" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_love_model_selected" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="50.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_change_model_false" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_e" android:id="@id/tv_continue_count_love" android:background="@drawable/radius_5_black_a30" android:paddingLeft="8.0dp" android:paddingTop="3.0dp" android:paddingRight="8.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="3/续聊次数" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/immerse_model" android:background="@drawable/radius_10_2c2" android:paddingLeft="16.0dp" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+            <LinearLayout android:gravity="center" android:layout_gravity="right" android:id="@id/immerse_model_lock_layout" android:background="@drawable/radius_10_313" android:padding="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/ic_model_lock" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffb0b3b8" android:id="@id/tv_immerse_model_lock_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="0/3视频解锁" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="私密对话(全景演绎，感官跃迁)" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp">
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_9" android:id="@id/tv_immerse_model_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拟真环境，角色回复较长，包含丰富的场景和动作描写" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_immerse_model_selected" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="50.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_change_model_false" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_e" android:id="@id/tv_continue_count_immerse" android:background="@drawable/radius_5_black_a30" android:paddingLeft="8.0dp" android:paddingTop="3.0dp" android:paddingRight="8.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="5/续聊次数" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/button" android:background="@drawable/radius_100_796" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="27.0dp" android:text="保存选择" />
+    </LinearLayout>
+</RelativeLayout>

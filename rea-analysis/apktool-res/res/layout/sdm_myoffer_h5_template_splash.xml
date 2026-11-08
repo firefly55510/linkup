@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.smartdigimkt.sdk.basead.ui.RoundCornerRelativeLayout android:id="@id/sdm_myoffer_player_view_container_id" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <com.smartdigimkt.sdk.basead.ui.PlayerView android:id="@id/sdm_myoffer_player_view_id" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.smartdigimkt.sdk.basead.ui.RoundCornerRelativeLayout>
+    <include layout="@layout/sdm_myoffer_include_splash_ad_layout_skip_area" />
+    <com.smartdigimkt.sdk.basead.ui.CloseImageView android:id="@id/sdm_myoffer_btn_close_id" android:background="@drawable/sdm_myoffer_base_close_icon" android:visibility="gone" android:layout_width="@dimen/sdm_myoffer_half_screen_button_size" android:layout_height="@dimen/sdm_myoffer_half_screen_button_size" android:layout_marginTop="42.0dp" android:layout_marginRight="42.0dp" android:layout_alignParentRight="true" />
+</merge>

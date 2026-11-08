@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/zjadc_top_view" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zj.ada.ys.biz.loader.view.widget.AdDetectorContainerLayout android:id="@id/zjadc_ad_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/zjadc_ad_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <TextureView android:id="@id/zjadc_ad_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:id="@id/zjadc_ad_ms" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.zj.ada.ys.biz.loader.view.widget.AdDetectorContainerLayout>
+    <com.zj.ada.ys.biz.loader.view.widget.AdDetectorContainerLayout android:id="@id/zjadc_ad_click_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.zj.ada.ys.biz.loader.view.widget.AdDetectorContainerLayout android:id="@id/zjadc_ad_click_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.zj.ada.ys.biz.loader.view.widget.AdDetectorContainerLayout android:id="@id/zjadc_ad_skip_content" android:visibility="gone" android:layout_width="60.0dp" android:layout_height="30.0dp" android:layout_margin="10.0dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/zjadc_iv_volume_switch" android:background="@drawable/zjadc_bg_splash_video_volume" android:padding="10.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="100.0dp" android:src="@drawable/zjadc_icn_volume_off" android:layout_marginEnd="30.0dp" android:layout_alignParentEnd="true" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/zjadc_ad_logo_layout" android:background="@drawable/zjadc_ad_sdk_tip_bg4" android:padding="2.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:layout_alignParentBottom="true" android:layout_marginEnd="15.0dp" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/zjadc_img_logo" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/zjadc_ad_sdk_white" android:id="@id/zjadc_ad_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zjadc_ad_sdk_tip" android:layout_marginStart="5.0dp" />
+    </LinearLayout>
+    <TextView android:textSize="20.0sp" android:textColor="@color/zjadc_ad_sdk_white" android:gravity="center" android:id="@id/zjadc_ad_log" android:background="@drawable/zjadc_ad_sdk_tip_bg4" android:padding="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

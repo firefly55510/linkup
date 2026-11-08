@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_top" android:layout_width="match_parent" android:layout_height="150.0dp">
+        <ImageView android:id="@id/yd_saas_view_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <FrameLayout android:id="@id/fl_saas_interstitial_media_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/fl_saas_interstitial_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/fl_top">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/tv_fl_saas_interstitial_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/tv_fl_saas_interstitial_des" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:maxLines="1" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_fl_saas_interstitial_cta" android:background="@drawable/fl_adx_3366ff_bg" android:paddingLeft="25.0dp" android:paddingTop="6.0dp" android:paddingRight="25.0dp" android:paddingBottom="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="查看详情" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

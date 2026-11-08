@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/v_flag" layout="@layout/hx_layout_ad_native_flag" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff9d9d9d" android:id="@id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="8.0dp" android:layout_toEndOf="@id/v_flag" />
+    <com.huanxiao.sdk.widget.HXImageView android:id="@id/iv_close" android:layout_width="18.0dp" android:layout_height="12.0dp" android:src="@drawable/hx_native_close" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentEnd="true" android:paddingHorizontal="3.0dp" />
+    <com.huanxiao.sdk.widget.HXShapeTextView android:textSize="12.0sp" android:textColor="#ff3a84ee" android:gravity="center" android:id="@id/button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/hx_native_open" android:drawablePadding="3.0dp" android:layout_centerVertical="true" android:layout_marginEnd="4.0dp" android:layout_toStartOf="@id/iv_close" android:paddingHorizontal="6.0dp" />
+</RelativeLayout>

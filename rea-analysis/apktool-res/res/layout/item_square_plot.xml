@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5.0dp" app:cardBackgroundColor="#ff1b1a27" app:cardCornerRadius="8.0dp" app:cardElevation="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img" android:layout_width="match_parent" android:layout_height="220.0dp" android:scaleType="centerCrop" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffdddade" android:id="@id/type" android:background="@drawable/radius_100_black_a4d" android:paddingLeft="12.0dp" android:paddingTop="3.0dp" android:paddingRight="12.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dp" android:text="双人" />
+        <LinearLayout android:gravity="center" android:id="@id/hotLayout" android:background="@drawable/radius_100_black_a4d" android:paddingLeft="12.0dp" android:paddingTop="3.0dp" android:paddingRight="12.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/ic_hot2" />
+            <TextView android:textSize="11.0sp" android:textColor="#ffdddade" android:id="@id/hotCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="11.2万" />
+        </LinearLayout>
+        <TextView android:background="@drawable/shadow_bottom_c1b" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_alignBottom="@id/img" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="7.0dp" android:paddingRight="7.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/img">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="自从大学毕业后" android:maxLines="2" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:ellipsize="end" android:id="@id/details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="" android:maxLines="2" android:lineSpacingExtra="5.0dp" />
+            <com.donkingliang.labels.LabelsView android:id="@id/labelView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:labelBackground="@drawable/radius_100_white_a1a" app:labelTextColor="@color/color_c3" app:labelTextPaddingBottom="2.0dp" app:labelTextPaddingLeft="8.0dp" app:labelTextPaddingRight="8.0dp" app:labelTextPaddingTop="2.0dp" app:labelTextSize="10.0sp" app:lineMargin="8.0dp" app:maxLines="2" app:maxSelect="0" app:wordMargin="8.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

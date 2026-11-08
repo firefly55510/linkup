@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/zjad_native_video_surface_fl" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/zjad_native_video_thumb" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/zjad_native_video_app_rl" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/zjad_native_video_blur_iv" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/zjad_native_video_big_replay" android:background="@drawable/zjad_image_video_block" android:visibility="visible" android:layout_width="65.0dp" android:layout_height="65.0dp" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/zjad_video_replay" />
+            <TextView android:textSize="8.0sp" android:textColor="@android:color/white" android:layout_gravity="center|bottom" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重新播放" />
+        </FrameLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@id/zjad_native_video_bottom_progress" android:layout_width="match_parent" android:layout_height="1.5dp" android:max="100" android:progressDrawable="@drawable/zjad_video_progress" android:layout_alignParentBottom="true" style="?android:progressBarStyleHorizontal" />
+    <RelativeLayout android:id="@id/zjad_native_video_sound_rl" android:background="@drawable/zjad_image_video_block" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/zjad_native_video_sound_btn" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/zjad_video_unmute" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/zjad_native_video_start_rl" android:background="@drawable/zjad_image_video_block" android:visibility="visible" android:layout_width="45.0dp" android:layout_height="45.0dp" android:layout_centerInParent="true">
+        <ImageView android:id="@id/zjad_native_video_start_btn" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/zjad_video_play" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/zjad_native_video_layout_bottom" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="15.0dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/zjad_native_video_fullscreen_rl" android:background="@drawable/zjad_image_video_block" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/zjad_native_video_fullscreen_btn" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/zjad_video_fullscreen" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

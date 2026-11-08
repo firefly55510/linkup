@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/yo_owner_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/yo_product_icon" android:background="@drawable/yo_bg_trans_radius_4" android:layout_width="64.0dp" android:layout_height="64.0dp" android:scaleType="fitXY" android:layout_marginStart="40.0dp" android:layout_marginEnd="40.0dp" />
+    <TextView android:gravity="center" android:id="@id/yo_product_name" android:layout_marginTop="16.0dp" android:layout_marginStart="40.0dp" android:layout_marginEnd="40.0dp" style="@style/yo_feed_title" />
+    <TextView android:gravity="center" android:id="@id/yo_product_desc" android:layout_marginTop="12.0dp" android:layout_marginStart="40.0dp" android:layout_marginEnd="40.0dp" style="@style/yo_feed_summary" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/yo_owner_submit" android:background="@drawable/yo_bg_btn_big_3" android:layout_width="320.0dp" android:layout_height="48.0dp" android:layout_marginTop="24.0dp" android:text="立即查看" android:maxLines="1" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" android:layout_marginStart="40.0dp" android:layout_marginEnd="40.0dp" />
+</LinearLayout>

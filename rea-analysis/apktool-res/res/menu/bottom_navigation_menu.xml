@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/selector_menu_home" android:id="@id/navigation_home" android:title="推荐" />
+    <item android:icon="@drawable/selector_menu_square" android:id="@id/navigation_square" android:title="广场" />
+    <item android:icon="@drawable/selector_menu_harem" android:id="@id/navigation_harem" android:title="后宫" />
+    <item android:icon="@drawable/selector_menu_mine" android:id="@id/navigation_mine" android:title="我的" />
+</menu>

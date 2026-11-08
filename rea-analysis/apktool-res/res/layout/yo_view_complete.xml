@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/yo_complete_view" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/yo_complete_bg_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <FrameLayout android:layout_gravity="center" android:background="@drawable/yo_bg_card" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/yo_owner_img" android:background="@drawable/yo_bg_trans_radius_4" android:layout_width="72.0dp" android:layout_height="72.0dp" android:layout_marginTop="24.0dp" android:scaleType="fitXY" android:layout_marginStart="40.0dp" android:layout_marginEnd="40.0dp" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/yo_owner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginStart="40.0dp" android:layout_marginEnd="40.0dp" />
+            <TextView android:textSize="12.0sp" android:textColor="#fff7f2f2" android:gravity="center" android:id="@id/yo_owner_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:maxLines="2" android:layout_marginStart="40.0dp" android:layout_marginEnd="40.0dp" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/yo_owner_submit" android:background="@drawable/yo_bg_btn_big" android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_marginTop="40.0dp" android:layout_marginBottom="40.0dp" android:text="@string/yo_btn_card" android:maxLines="1" android:layout_marginStart="40.0dp" android:layout_marginEnd="40.0dp" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="end|top" android:id="@id/yo_owner_close" android:background="@drawable/yo_bg_duration" android:padding="5.0dp" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="40.0dp" android:src="@mipmap/yo_close_white" android:layout_marginEnd="8.0dp" />
+    </FrameLayout>
+</FrameLayout>

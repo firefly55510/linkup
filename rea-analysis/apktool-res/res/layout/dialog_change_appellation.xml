@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/main_ll" android:background="@drawable/radius_12_201" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dp" android:layout_marginRight="35.0dp" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/radius_12_e6c" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_change_name" />
+            <EditText android:textSize="12.0sp" android:textColor="@color/white" android:textColorHint="@color/white_alpha_80" android:ellipsize="end" android:gravity="top" android:id="@id/nickname" android:background="@drawable/radius_5_ea_16" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:hint="请输入" android:lines="1" android:maxLength="10" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/back" android:background="@drawable/radius_100_1e1" android:padding="8.0dp" android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_margin="15.0dp" android:text="取消" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/sure" android:background="@drawable/radius_100_a34_db5" android:padding="8.0dp" android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_margin="15.0dp" android:text="提交" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="35.0dp" android:src="@drawable/ic_star" />
+    <ImageView android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="-20.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/ic_star3" android:layout_alignTop="@id/main_ll" android:layout_alignParentRight="true" />
+    <FrameLayout android:id="@id/nativeAdView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff141319" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+        <ImageView android:id="@id/back" android:padding="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_back_white" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="创建多人聊天" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_eb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="场景说明*" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/white" android:textColorHint="@color/color_ae" android:gravity="top" android:id="@id/sceneDesc" android:background="@drawable/radius_10_24" android:paddingLeft="25.0dp" android:paddingTop="10.0dp" android:paddingRight="25.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="" android:hint="填写完整场景说明" android:minLines="6" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_eb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="人物加入" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/selectRecyclerView" android:background="@drawable/bg_square_label" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="90.0dp" android:layout_marginTop="20.0dp" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/roleRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_eb" android:gravity="center" android:id="@id/button" android:background="@drawable/radius_100_796" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="40.0dp" android:text="创建多人聊天" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/yo_advance_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.zongliang.sdk.core.view.YoAdvanceLayout android:layout_gravity="center" android:id="@id/yo_advance_container" android:background="@drawable/yo_bg_trans_radius" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100.0dp" android:layout_marginStart="64.0dp" android:layout_marginEnd="64.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/yo_product_desc" android:layout_marginTop="30.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" style="@style/yo_feed_summary" />
+</LinearLayout>

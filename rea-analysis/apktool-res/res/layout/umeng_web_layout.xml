@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="52.0dp">
+        <ImageView android:id="@id/um_ib_back" android:background="@drawable/umeng_union_lp_back" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="15.0dp" android:layout_centerVertical="true" android:layout_marginStart="15.0dp" />
+        <ImageView android:gravity="center" android:id="@id/um_ib_close" android:background="@drawable/umeng_union_lp_close" android:layout_width="17.0dp" android:layout_height="17.0dp" android:layout_marginLeft="20.0dp" android:layout_toRightOf="@id/um_ib_back" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_toEndOf="@id/um_ib_back" />
+        <TextView android:textSize="20.0dp" android:textColor="#ff000000" android:ellipsize="marquee" android:gravity="center" android:id="@id/um_tv_title" android:layout_width="200.0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/um_pb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="3.0dp" android:progressDrawable="@drawable/umeng_pb" style="?android:progressBarStyleHorizontal" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/um_landingpage_error_iv" android:background="@drawable/umeng_union_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <WebView android:id="@id/um_landingpage_webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

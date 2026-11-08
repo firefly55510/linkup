@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/zjad_splash_blur_image" android:background="@drawable/zjad_blur_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <FrameLayout android:id="@id/zjad_splash_post_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/zjad_splash_post_media" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="200.0dp" android:layout_centerInParent="true" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/zjad_splash_shake_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/zjad_splash_shake_layout" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/zjad_splash_shake_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:text="@string/zjad_shake_see_detail" android:singleLine="true" android:layout_below="@id/zjad_splash_shake_layout" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.zj.adlib.base.fb.FBView android:id="@id/zjad_splash_feedback_view" android:visibility="invisible" android:layout_width="45.0dp" android:layout_height="23.0dp" android:layout_marginTop="@dimen/zjad_30" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/zjad_30" android:layout_alignParentStart="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/zjad_splash_sound_and_skip_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zjad_30" android:layout_marginEnd="@dimen/zjad_30" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/zjad_splash_sound_image" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/zjad_sound_on" android:scaleType="centerCrop" />
+        <FrameLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/zjad_splash_skip_ll" android:background="@drawable/zjad_skip_bt" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/zjad_splash_skip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zjad_skip5" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/zjad_splash_icon_text_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" android:layout_marginBottom="50.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/zjad_cta_fl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/zjad_splash_cta_ll" android:background="@drawable/zjad_cta_bt" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/zjad_splash_cta_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/zjad_splash_cta_bt_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.zj.adlib.base.view.TbLightingAnimationView android:layout_gravity="center" android:id="@id/zjad_splash_cta_bt_gd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/zjad_splash_privacy_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <include layout="@layout/zjad_privacy" />
+    </LinearLayout>
+    <com.zj.adlib.base.view.LogoImageView android:gravity="center_vertical" android:id="@id/zjad_splash_logo_image" android:layout_width="50.0dp" android:layout_height="20.0dp" android:layout_margin="10.0dp" android:layout_marginBottom="15.0dp" android:src="@drawable/zjad_ad_logo" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

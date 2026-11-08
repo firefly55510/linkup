@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.beizi.fusion.widget.ScrollArcView android:layout_gravity="center" android:id="@id/slide_arc" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.3" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/slide_text_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/slide_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:shadowColor="#80000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="5.0" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/slide_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:shadowColor="#80000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="5.0" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/zjadc_s_splash_root" android:background="@android:color/transparent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zj.ada.open.widget.test.OnTouchEventView android:layout_width="1.0px" android:layout_height="1.0px" />
+    <ImageView android:id="@id/zjadc_s_splash_iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/zjadc_s_splash_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/zjadc_s_splash_video_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <com.zj.ada.open.widget.video.StarsVideoView android:layout_gravity="center" android:id="@id/zjadc_s_splash_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.zj.ada.open.widget.redpack.StarsRedPacketRainView android:id="@id/zjadc_s_skip_red_pack_rain" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.zj.ada.open.widget.ad.spalsh.SplashTopPanelView android:layout_gravity="top" android:id="@id/zjadc_s_splash_top_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="top" android:id="@id/zjadc_s_splash_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="start|top" android:id="@id/zjadc_s_splash_sound" android:background="@drawable/zjadc_s_video_btn_bg" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginTop="@dimen/zjadc_s_skip_view_top_vertical" android:layout_marginBottom="@dimen/zjadc_s_skip_view_padding_horizontal" android:src="@drawable/zjadc_s_video_sound_selector" android:scaleType="centerInside" android:layout_marginStart="@dimen/zjadc_s_skip_view_padding_horizontal" />
+        <View android:layout_gravity="end" android:id="@id/zjadc_s_skip_view_area" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+        <LinearLayout android:layout_gravity="end|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zjadc_s_skip_view_top_vertical" android:layout_marginEnd="@dimen/zjadc_s_skip_view_padding_horizontal">
+            <TextView android:textSize="@dimen/zjadc_s_skip_view_text_size" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/zjadc_s_splash_btn_feedback" android:background="@drawable/zjadc_s_skip_view_bg" android:layout_width="wrap_content" android:layout_height="32.0dp" android:text="反馈" android:layout_marginEnd="12.0dp" android:paddingHorizontal="16.0dp" />
+            <com.zj.ada.open.widget.StarsSkipView android:id="@id/zjadc_s_splash_skip_view" android:background="@drawable/zjadc_s_skip_view_bg" android:paddingLeft="@dimen/zjadc_s_skip_view_padding_horizontal" android:paddingRight="@dimen/zjadc_s_skip_view_padding_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/zjadc_s_skip_view_height" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.zj.ada.open.widget.StarsLogoView android:layout_gravity="start|bottom" android:id="@id/zjadc_s_splash_logo_container" android:background="@drawable/zjadc_s_splash_logo_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zjadc_s_skip_view_button_vertical" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/zjadc_s_splash_actionbar_native_stub" android:visibility="gone" android:layout="@layout/zjadc_s_splash_action_native" android:layout_width="match_parent" android:layout_height="@dimen/zjadc_s_splash_actionbar_height" android:layout_marginBottom="@dimen/zjadc_s_splash_shake_view_margin_bottom" />
+    <include android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/zjadc_s_bottom_view" />
+</FrameLayout>

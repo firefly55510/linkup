@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginTop="60.0dp" android:src="@drawable/ic_gender_top" android:adjustViewBounds="true" />
+    <TextView android:textSize="25.0sp" android:textColor="@color/white" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="请选择你的性别" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="35.0dp" android:layout_marginTop="25.0dp" android:layout_marginRight="35.0dp" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/girl" android:background="@drawable/radius_100_262_k7a6" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:text="女" />
+            <ImageView android:id="@id/girl_label" android:background="@drawable/radius_100_7a6_right" android:paddingLeft="10.0dp" android:paddingTop="7.0dp" android:paddingRight="16.0dp" android:paddingBottom="7.0dp" android:layout_width="40.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_gou" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/boy" android:background="@drawable/radius_100_262" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:text="男" />
+            <ImageView android:id="@id/boy_label" android:background="@drawable/radius_100_7a6_right" android:paddingLeft="10.0dp" android:paddingTop="7.0dp" android:paddingRight="16.0dp" android:paddingBottom="7.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_gou" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/button" android:background="@drawable/radius_100_796_ff5" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="50.0dp" android:layout_marginTop="12.0dp" android:text="确定" />
+</LinearLayout>

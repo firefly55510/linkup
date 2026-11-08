@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="#33999999" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/zjadc_s_download_video" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.zj.ada.open.widget.video.StarsVideoView android:layout_gravity="center_horizontal" android:id="@id/zjadc_s_download_video_video" android:layout_width="match_parent" android:layout_height="210.0dp" />
+        <FrameLayout android:id="@id/zjadc_s_download_video_land" android:layout_width="match_parent" android:layout_height="210.0dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/zjadc_s_download_video_land_operate" android:background="#4d000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/zjadc_s_download_video_land_operate_icon" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" />
+                <TextView android:textSize="@dimen/zjadc_s_express_view_text_size" android:textColor="#ffffffff" android:id="@id/zjadc_s_download_video_land_operate_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="5.0dp" />
+                <com.zj.ada.open.widget.StarsProgressButton android:textSize="@dimen/zjadc_s_express_view_text_size" android:textColor="#ffffffff" android:id="@id/zjadc_s_download_video_land_operate_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp" android:paddingVertical="2.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/zjadc_s_download_video_land_replay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+                <ImageView android:background="@drawable/zjadc_s_reward_replay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/zjadc_s_express_view_text_size" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zjadc_s_reward_replay" android:layout_marginStart="8.0dp" />
+            </LinearLayout>
+            <ImageView android:id="@id/zjadc_s_download_video_land_back" android:background="@drawable/zjadc_s_ic_arrow_left" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="10.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/zjadc_s_download_video_land_control" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+                <ImageView android:id="@id/zjadc_s_download_video_land_control_pause" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/zjadc_s_video_player_selector" />
+                <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                <ImageView android:id="@id/zjadc_s_download_video_land_control_sound" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/zjadc_s_video_sound_selector" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/zjadc_s_download_fl" android:background="#ffffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0">
+        <ScrollView android:id="@id/zjadc_s_download_sv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/zjadc_s_download_sv_iv" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+                    <com.zj.ada.open.widget.StarsProgressButton android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/zjadc_s_download_sv_down" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="center" android:id="@id/zjadc_s_download_sv_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zjadc_s_download_delete" android:layout_marginStart="5.0dp" />
+                </LinearLayout>
+                <TextView android:textSize="11.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/zjadc_s_download_sv_element" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:layout_marginHorizontal="10.0dp" />
+            </LinearLayout>
+        </ScrollView>
+        <ImageView android:id="@id/zjadc_s_download_close" android:background="@drawable/zjadc_s_landing_back" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="40.0dp" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/zjadc_s_download_float" android:background="@drawable/zjadc_s_download_float_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="20.0dp" android:layout_marginHorizontal="10.0dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginHorizontal="10.0dp">
+                <com.zj.ada.open.widget.StarsRoundImageView android:id="@id/zjadc_s_download_float_icon" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/zjadc_s_download_float_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dp" />
+                <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+                <ImageView android:id="@id/zjadc_s_download_float_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zjadc_s_download_delete" android:layout_marginEnd="5.0dp" />
+                <com.zj.ada.open.widget.StarsProgressButton android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/zjadc_s_download_float_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="10.0dp" android:paddingVertical="5.0dp" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/zjadc_s_download_float_element" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

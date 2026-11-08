@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/topView" android:padding="5.0dp" android:fitsSystemWindows="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <ImageView android:id="@id/back" android:padding="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_back_white" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="还有百位名人等你聊" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="32.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="她的新玩法上线了" android:fontFamily="@font/source_han_serif_cn_heavy" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_ffe3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专属场景+名人入驻，点这里体验" />
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dp" android:layout_marginTop="40.0dp" android:layout_marginRight="60.0dp" android:adjustViewBounds="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:text="解锁和她的私密场景" />
+        <ImageView android:id="@id/sure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:src="@drawable/yijianjiesuo" />
+    </LinearLayout>
+</LinearLayout>

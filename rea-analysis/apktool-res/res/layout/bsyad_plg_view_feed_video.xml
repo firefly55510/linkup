@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.adx.ui.view.AdxPlgVideoView android:id="@id/bsyad_plg_fl_video_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/bsyad_plg_iv_video_cover" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/bsyad_plg_iv_volume" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginLeft="16.0dp" android:layout_marginBottom="16.0dp" android:src="@drawable/bsyad_plg_icon_mute" android:layout_above="@id/bsyad_plg_split_view" />
+    <View android:id="@id/bsyad_plg_split_view" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bsyad_plg_ll_patch" android:background="@color/bsyad_plg_color_half_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.ui.view.BSYAdRoundImageView android:id="@id/bsyad_plg_iv_banner_ad_icon" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/bsyad_plg_color_white" android:id="@id/bsyad_plg_tv_ad_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:maxLines="2" android:layout_marginHorizontal="32.0dp" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/bsyad_plg_color_white" android:id="@id/bsyad_plg_tv_ad_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:maxLines="2" android:layout_marginHorizontal="32.0dp" />
+        <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.adx.ui.view.AdxPlgClickButton android:textSize="10.0sp" android:textColor="@color/bsyad_plg_color_white" android:gravity="center" android:id="@id/bsyad_plg_tv_action" android:background="@drawable/bsyad_plg_bg_feed_action" android:layout_width="100.0dp" android:layout_height="28.0dp" android:layout_marginTop="10.0dp" />
+    </LinearLayout>
+</RelativeLayout>

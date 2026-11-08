@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/yo_bg_remain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dp">
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/yo_dialog_content" android:layout_width="240.0dp" android:layout_height="64.0dp" android:layout_marginTop="48.0dp" android:text="再看26s/开始下载可立即领奖" />
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/yo_dialog_cancel" android:background="@drawable/yo_bg_btn_remain" android:layout_width="272.0dp" android:layout_height="52.0dp" android:layout_marginTop="16.0dp" android:text="继续观看" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/yo_dialog_submit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="16.0dp" android:text="继续关闭" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center|top" android:layout_width="120.0dp" android:layout_height="120.0dp" android:src="@mipmap/yo_remain" />
+</FrameLayout>

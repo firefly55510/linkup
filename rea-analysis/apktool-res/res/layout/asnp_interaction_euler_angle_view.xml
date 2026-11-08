@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/adscope_ieav_title_container_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <View android:layout_width="match_parent" android:layout_height="4.0dp" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/adscope_ieav_title_tv" android:paddingTop="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="5.0" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/adscope_ieav_subtitle_tv" android:paddingTop="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="5.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/adscope_ieav_container_rl" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/adscope_ieav_title_container_ll" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/adscope_ieav_img_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/asnp_interaction_icon_euler_angle" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+        <com.beizi.fusion.asnp.adn.ad.ad.nativead.render.view.asnp.prefab.ScopeIndicateArrowView android:id="@id/adscope_ieav_indicate_arrow_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

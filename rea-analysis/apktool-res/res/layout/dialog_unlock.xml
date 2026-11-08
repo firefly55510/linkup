@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:padding="30.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/mian_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/bg_unlock_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bg_unlock_dialog2" android:adjustViewBounds="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/tip" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginRight="25.0dp" android:text="" />
+                <TextView android:textSize="13.0sp" android:id="@id/tip2" android:background="#ffedb7eb" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="1.0dp" android:layout_marginLeft="25.0dp" android:layout_marginRight="25.0dp" android:text="" android:layout_above="@id/look" />
+            </LinearLayout>
+            <ImageView android:id="@id/look" android:layout_width="120.0dp" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:src="@drawable/bt_unlock_dialog" android:adjustViewBounds="true" android:layout_alignBottom="@id/bg_unlock_dialog" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:src="@drawable/ic_close" android:adjustViewBounds="true" android:layout_below="@id/mian_rl" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/nativeAdView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

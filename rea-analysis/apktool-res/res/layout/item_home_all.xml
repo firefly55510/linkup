@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5.0dp" app:cardBackgroundColor="#ff1b1a27" app:cardCornerRadius="8.0dp" app:cardElevation="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img" android:layout_width="match_parent" android:layout_height="220.0dp" android:scaleType="centerCrop" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/headLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="5.0dp">
+            <LinearLayout android:gravity="center" android:id="@id/headImgLayout" android:background="@drawable/radius_100_black_a4d" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:layout_width="25.0dp" android:layout_height="25.0dp" app:cardCornerRadius="25.0dp" app:cardElevation="0.0dp">
+                    <ImageView android:id="@id/headImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+                </androidx.cardview.widget.CardView>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp">
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    <TextView android:textSize="9.0sp" android:textColor="@color/color_d" android:id="@id/hot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.8W人气" />
+                </LinearLayout>
+                <ImageView android:id="@id/addHarem" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginLeft="4.0dp" android:src="@drawable/ic_add_harem" />
+            </LinearLayout>
+            <ImageView android:id="@id/friend" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginRight="8.0dp" android:src="@drawable/ic_friend" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:background="@drawable/shadow_bottom_c1b" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_alignBottom="@id/img" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="7.0dp" android:paddingRight="7.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/img">
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:ellipsize="end" android:id="@id/details" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2" android:lineSpacingExtra="5.0dp" />
+            <com.donkingliang.labels.LabelsView android:id="@id/labelView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:labelBackground="@drawable/radius_100_white_a1a" app:labelTextColor="@color/color_c3" app:labelTextPaddingBottom="2.0dp" app:labelTextPaddingLeft="8.0dp" app:labelTextPaddingRight="8.0dp" app:labelTextPaddingTop="2.0dp" app:labelTextSize="10.0sp" app:lineMargin="8.0dp" app:maxLines="2" app:maxSelect="0" app:wordMargin="8.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

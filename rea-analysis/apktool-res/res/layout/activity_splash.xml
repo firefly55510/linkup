@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/loadImg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <FrameLayout android:id="@id/openAds" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/img" android:layout_width="150.0dp" android:layout_height="150.0dp" />
+        <TextView android:textSize="25.0sp" android:textColor="@color/black" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/app_name" />
+    </LinearLayout>
+    <ImageView android:layout_width="60.0dp" android:layout_height="80.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="100.0dp" android:src="@drawable/ic_r18" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="match_parent" android:layout_height="18.0dp" android:layout_marginBottom="50.0dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/progressbar_h" android:layout_alignParentBottom="true" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+</RelativeLayout>

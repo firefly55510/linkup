@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/channel_banner_iv" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/channel_banner_ic_iv" android:visibility="gone" android:layout_width="45.0dp" android:layout_height="15.0dp" android:layout_marginRight="1.0dp" android:layout_marginBottom="1.0dp" android:src="@drawable/ad_sdk_icon" android:scaleType="fitCenter" android:layout_alignRight="@id/channel_banner_iv" android:layout_alignBottom="@id/channel_banner_iv" />
+    <ImageView android:id="@id/channel_banner_close_iv" android:visibility="gone" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@mipmap/ad_sdk_icon_close" android:layout_alignParentRight="true" />
+</RelativeLayout>

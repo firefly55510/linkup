@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/adgain_interstitial_click_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="85.0dp" android:layout_marginStart="@dimen/adgain_inter_margin_left" android:layout_marginEnd="@dimen/adgain_inter_margin_left">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/adgain_interstitial_close_ll" android:background="@drawable/adgain_shape_skip_bt" android:paddingLeft="8.0dp" android:paddingTop="5.0dp" android:paddingRight="8.0dp" android:paddingBottom="5.0dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginEnd="5.0dp" android:layout_alignParentEnd="true">
+            <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:id="@id/adgain_interstitial_close_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关闭" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/adgain_interstitial_sound_and_skip_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginStart="10.0dp">
+            <ImageView android:id="@id/adgain_interstitial_sound_image" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/adgain_image_ad_sound_on" android:scaleType="centerCrop" android:layout_marginEnd="5.0dp" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/adgain_interstitial_skip_ll" android:background="@drawable/adgain_shape_skip_bt" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/adgain_interstitial_skip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adgain_skip5" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

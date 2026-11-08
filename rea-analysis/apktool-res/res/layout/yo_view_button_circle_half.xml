@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/yo_owner_submit" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:clipChildren="true" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="108.0dp" android:layout_marginTop="50.0dp">
+        <View android:layout_gravity="top" android:background="@drawable/yo_bg_circle_half" android:layout_width="match_parent" android:layout_height="216.0dp" />
+    </FrameLayout>
+    <View android:background="@drawable/yo_bg_circle_bottom" android:layout_width="match_parent" android:layout_height="108.0dp" android:layout_marginTop="158.0dp" />
+    <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/yo_owner_submit" android:layout_width="wrap_content" android:layout_height="72.0dp" android:layout_marginTop="32.0dp" android:text="点击前往三方应用或查看详情页" />
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.PlayerView android:id="@id/videoView" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" app:resize_mode="zoom" app:surface_type="texture_view" app:use_controller="false" />
+    <ImageView android:id="@id/img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <TextView android:background="@drawable/shadow_bottom" android:layout_width="match_parent" android:layout_height="160.0dp" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="center" android:id="@id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/back" android:padding="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_back_white" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:fadingEdgeLength="50.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_weight="1.0" android:requiresFadingEdge="vertical" />
+        <LinearLayout android:id="@id/bottom_input_layout" android:background="@drawable/shadow_bottom" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:background="@drawable/radius_10_c4" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="15.0dp" android:layout_weight="1.0">
+                <EditText android:textSize="15.0sp" android:textColor="@color/white" android:textColorHint="#ff8e9293" android:id="@id/message_input" android:background="@color/transparent" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="请输入聊天消息..." android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSend" />
+                <ImageView android:id="@id/inspiration" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_more_send" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/inspiration_layout" android:background="@color/color_15" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:paddingBottom="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center" android:id="@id/inspirationLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="20.0dp" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/inspirationRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

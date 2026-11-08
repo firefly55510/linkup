@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huanxiao.sdk.widget.RatioFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/middle_content" android:background="@drawable/hx_bg_splash_image_placeholder" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <include android:id="@id/hx_widget_player" android:visibility="gone" layout="@layout/hx_widget_player" />
+        <ImageView android:id="@id/iv_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+        <com.huanxiao.sdk.widget.ADContentView android:id="@id/v_ad_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="start" android:orientation="horizontal" android:id="@id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huanxiao.sdk.widget.HXImageView android:id="@id/iv_close" android:visibility="gone" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/hx_btn_close" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/buttons_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginHorizontal="20.0dp" android:layout_marginVertical="4.0dp">
+            <ImageView android:id="@id/iv_mute" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hx_btn_mute_selector" android:layout_centerVertical="true" />
+            <com.huanxiao.sdk.widget.HXTextView android:textSize="12.0sp" android:textColor="@color/hx_white" android:gravity="center" android:id="@id/tv_skip" android:background="@drawable/hx_btn_bg_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳过 1" android:minEms="4" android:layout_centerVertical="true" android:paddingHorizontal="8.0dp" android:paddingVertical="4.0dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.huanxiao.sdk.widget.HXShapeTextView android:textSize="16.0sp" android:textColor="@color/hx_white" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/button" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginBottom="60.0dp" android:text="@string/hx_click_jump" android:layout_marginHorizontal="40.0dp" app:hx_shape_radius="29.0dp" app:hx_shape_solidColor="#80000000" app:hx_shape_strokeColor="#ffd0d0d0" app:hx_shape_strokeSize="0.6700001dp" />
+    <com.huanxiao.sdk.widget.HXMagicInteractPanel android:layout_gravity="center|bottom" android:id="@id/magic_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_120" />
+    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/hx_native_app_info_bottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huanxiao.sdk.widget.ComplianceTextView android:textSize="10.0sp" android:textColor="#99ffffff" android:layout_gravity="bottom" android:id="@id/tv_compliance" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="60.0dp" android:paddingVertical="10.0dp" app:hx_privacy_color="#99ffffff" />
+        <include android:layout_gravity="end|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" layout="@layout/hx_layout_ad_native_flag" />
+    </FrameLayout>
+</com.huanxiao.sdk.widget.RatioFrameLayout>

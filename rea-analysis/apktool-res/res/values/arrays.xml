@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="adscope_complain_list">
+        <item>垃圾广告</item>
+        <item>感觉有被冒犯或被歧视</item>
+        <item>广告涉及欺诈造假</item>
+        <item>广告涉及色情暴力</item>
+        <item>广告涉及违建商品/服务</item>
+        <item>对广告内容不感兴趣</item>
+    </string-array>
+    <string-array name="advista_ad_title_lost">
+        <item>大家都在用，你还在等什么？</item>
+        <item>千万用户的选择，点击加入</item>
+        <item>点击领取限时福利</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="jyibg_ad_title_lost">
+        <item>大家都在用，你还在等什么？</item>
+        <item>千万用户的选择，点击加入</item>
+        <item>点击领取限时福利</item>
+    </string-array>
+</resources>

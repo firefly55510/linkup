@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/lookAds" android:background="@drawable/radius_100_241" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/lookAds_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="完成视频观看增加亲密度" android:layout_weight="1.0" />
+        <ImageView android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_chat_lookads" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/openVip" android:background="@drawable/radius_100_241" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/openVip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="开通会员额外增加亲密度" android:layout_weight="1.0" />
+        <ImageView android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_chat_lookads" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/chat" android:background="@drawable/radius_100_241" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/chat_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="与Ta对话增加亲密度" android:layout_weight="1.0" />
+        <ImageView android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_chat_lookads" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zj.adb.view.RootTouchViewGroup android:id="@id/rootTouchGroup" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/layoutAd" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/layout_auto_close" android:background="@drawable/rc_ad_shape_corner_native" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:paddingHorizontal="8.0dp" android:paddingVertical="5.0dp">
+            <TextView android:textSize="12.0dp" android:textColor="#ffa4a8b0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关闭" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffa4a8b0" android:gravity="center" android:id="@id/tv_close_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minEms="1" android:includeFontPadding="false" />
+        </LinearLayout>
+    </com.zj.adb.view.RootTouchViewGroup>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/layout_native_ad_pop_close_iv_bottom" android:background="@drawable/zjfl_bg_pop_bottom_close" android:padding="5.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="80.0dp" android:scaleType="fitCenter" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main_ll" android:background="@drawable/radius_12_201" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dp" android:layout_marginRight="35.0dp" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/radius_12_e6c" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.core.widget.NestedScrollView android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频广告加速" android:layout_weight="1.0" android:lineSpacingExtra="5.0dp" android:letterSpacing="0.1" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intimacy_explanation1" android:layout_weight="1.0" android:lineSpacingExtra="5.0dp" android:letterSpacing="0.1" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="-20.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/ic_star3" android:layout_alignTop="@id/main_ll" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/back" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/ic_close" android:layout_below="@id/main_ll" android:layout_centerHorizontal="true" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

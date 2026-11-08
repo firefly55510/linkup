@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/zjadc_top_view" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="5.0" layout="@layout/zjadc_splash_ad_top_view" />
+        <RelativeLayout android:gravity="center" android:id="@id/zjadc_bottom_view" android:background="@color/zjadc_ad_sdk_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <ImageView android:id="@id/zjadc_ad_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.zj.ada.ys.biz.loader.view.widget.SplashCountDownView android:layout_gravity="end|bottom" android:id="@id/zjadc_ad_skip" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginBottom="50.0dp" android:layout_marginEnd="30.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/zjadc_ad_sdk_white" android:gravity="center" android:layout_gravity="end|bottom" android:id="@id/zjadc_ad_skip_tv" android:background="@drawable/zjadc_ad_skip_tv_bg" android:visibility="gone" android:layout_width="66.0dp" android:layout_height="30.0dp" android:layout_marginBottom="30.0dp" android:text="跳过 3" android:layout_marginEnd="30.0dp" />
+</FrameLayout>

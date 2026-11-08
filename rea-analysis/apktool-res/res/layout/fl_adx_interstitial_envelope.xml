@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_bottom_bg" android:layout_width="match_parent" android:layout_height="150.0dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/rl_yd_saas_ad_card" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+        <RelativeLayout android:id="@id/rl_close" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_close_top" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@mipmap/fl_adx_ad_dialog_close" android:scaleType="fitCenter" android:layout_alignParentEnd="true" />
+            <View android:id="@id/v_close_top" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/fl_adx_round_white_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rl_close">
+            <FrameLayout android:id="@id/fl_app_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+            <com.fl.saas.adx.base.widget.RoundedFrameLayout android:id="@id/rl_main_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_below="@id/fl_app_info" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" app:fl_radius="10.0dp">
+                <com.fl.saas.adx.base.widget.AspectRatioRelativeLayout android:id="@id/rl_main" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="wrap_content" app:fl_aspectRatio="1.78">
+                    <ImageView android:id="@id/iv_yd_saas_bg_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+                    <ImageView android:id="@id/iv_yd_saas_custom_img" android:layout_width="match_parent" android:layout_height="match_parent" />
+                    <FrameLayout android:id="@id/iv_yd_saas_custom_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                    <ImageView android:id="@id/iv_yd_saas_custom_logo" android:layout_width="32.0dp" android:layout_height="12.0dp" android:layout_margin="8.0dp" android:scaleType="fitEnd" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                        <com.fl.saas.adx.base.widget.CountDownTextView android:textSize="11.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_skip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:text="5s" android:layout_toLeftOf="@id/iv_close" android:layout_alignParentTop="true" android:paddingHorizontal="10.0dp" app:fl_bg_color="#66000000" app:fl_bg_radius="7.0dp" />
+                        <ImageView android:id="@id/iv_close" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:src="@mipmap/fl_adx_ad_dialog_close" android:scaleType="fitCenter" android:layout_alignParentEnd="true" />
+                        <View android:id="@id/v_close" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </com.fl.saas.adx.base.widget.AspectRatioRelativeLayout>
+            </com.fl.saas.adx.base.widget.RoundedFrameLayout>
+            <com.fl.saas.adx.base.widget.CountDownTextView android:textSize="11.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_skip_top" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:text="5s" android:layout_alignTop="@id/rl_main_container" android:layout_alignEnd="@id/rl_main_container" android:paddingHorizontal="10.0dp" app:fl_bg_color="#66000000" app:fl_bg_radius="7.0dp" app:fl_count="5" />
+            <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/ll_yd_saas_custom_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="80.0dp" android:layout_below="@id/rl_main_container">
+                <com.fl.saas.adx.base.widget.ShaderRoundImageView android:id="@id/iv_yd_saas_custom_img_small" android:visibility="gone" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginTop="20.0dp" android:scaleType="centerCrop" app:fl_radius="8.0dp" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tv_yd_saas_custom_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="1" android:layout_marginHorizontal="12.0dp" />
+                <TextView android:textSize="13.0sp" android:textColor="#ffb4b4b4" android:ellipsize="end" android:gravity="center" android:id="@id/tv_yd_saas_custom_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="2" android:layout_marginHorizontal="12.0dp" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_arrow1" android:layout_width="18.0dp" android:layout_height="13.0dp" android:layout_marginTop="24.0dp" android:src="@drawable/fl_adx_icon_arrow_top" android:scaleType="fitXY" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_arrow2" android:layout_width="18.0dp" android:layout_height="13.0dp" android:layout_marginTop="-6.0dp" android:src="@drawable/fl_adx_icon_arrow_top" android:scaleType="fitXY" />
+                <TextView android:textSize="13.0sp" android:textColor="#ffb4b4b4" android:gravity="center" android:id="@id/tv_arrow" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="轻滑试试" android:maxLines="1" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_top_bg" android:layout_width="match_parent" android:layout_height="130.0dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentBottom="true" />
+    <com.fl.saas.adx.base.widget.EnvelopeActionLayout android:gravity="center_horizontal" android:id="@id/re_action" android:background="@drawable/fl_adx_envelope_action_background" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginBottom="20.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+        <com.fl.saas.adx.base.widget.ShakeView android:id="@id/yd_shake_view" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/tv_yd_saas_custom_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" android:layout_toEndOf="@id/yd_shake_view" />
+    </com.fl.saas.adx.base.widget.EnvelopeActionLayout>
+</RelativeLayout>

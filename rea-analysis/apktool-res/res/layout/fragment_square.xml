@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_home" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingTop="45.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tab_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tab_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/tv_tab_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="猜你喜欢" />
+                <View android:id="@id/indicator_like" android:background="#ffffffff" android:layout_width="26.0dp" android:layout_height="2.0dp" android:layout_marginTop="4.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tab_create" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="#ffbab9be" android:id="@id/tv_tab_create" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="    创建    " />
+                <View android:id="@id/indicator_create" android:background="#ffffffff" android:layout_width="26.0dp" android:layout_height="2.0dp" android:layout_marginTop="4.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/tab_group" android:layout_alignBottom="@id/tab_group" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/goMessage" android:layout_width="19.0dp" android:layout_height="19.0dp" android:src="@drawable/ic_square_message" />
+            <ImageView android:id="@id/goCustomer" android:layout_width="19.0dp" android:layout_height="19.0dp" android:layout_marginLeft="5.0dp" android:src="@drawable/ic_square_customer" />
+            <ImageView android:id="@id/goFriend" android:layout_width="19.0dp" android:layout_height="19.0dp" android:layout_marginLeft="5.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/ic_square_friend" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="10.0dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/topRecommend" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/topCreate" android:background="@drawable/bg_square_label" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_eb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新增无限制角色" />
+                <ImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/ic_square_add" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_bf" android:id="@id/create_role_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="0/3 完成3个视频任务，则解锁新增" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/classTab" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="10.0dp" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:layout_marginTop="10.0dp">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/label_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="13.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/label_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="风格" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/rightLabel" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:background="@color/white" android:layout_width="1.0dp" android:layout_height="9.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" />
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rightLabelRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/pull" android:layout_width="40.0dp" android:layout_height="wrap_content" android:src="@drawable/ic_square_next" android:layout_alignTop="@id/label_title" android:layout_alignBottom="@id/label_title" android:layout_alignParentRight="true" />
+        <com.donkingliang.labels.LabelsView android:id="@id/downLabelRecyclerView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginRight="13.0dp" android:layout_below="@id/label_title" app:labelBackground="@color/transparent" app:labelTextColor="@color/selector_square_label_text_color" app:labelTextPadding="0.0dp" app:labelTextSize="12.0sp" app:lineMargin="12.0dp" app:selectType="SINGLE" app:wordMargin="18.0dp" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/customScene" android:background="@drawable/bg_square_label" android:padding="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="10.0dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/createCustomScene" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0sp" android:textColor="#ffff5900" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不限人数" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_eb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自定义场景创建" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/color_eb" android:id="@id/createCustomSceneTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="没有喜欢的场景，可以一键自创多人聊天场景" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffbfbfbf" android:id="@id/sceneTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="0/5 完成视频任务，开启一键自创" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/showCustomScene" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/sceneRoleRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/sceneStartChat" android:background="@drawable/radius_100_white_a1a" android:paddingLeft="12.0dp" android:paddingTop="3.0dp" android:paddingRight="12.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始聊天" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/createScene" android:background="@drawable/radius_100_white_a1a" android:paddingLeft="12.0dp" android:paddingTop="3.0dp" android:paddingRight="12.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="重新创建" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.scwang.smart.refresh.header.ClassicsHeader android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="10.0dp" />
+        <com.scwang.smart.refresh.footer.ClassicsFooter android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

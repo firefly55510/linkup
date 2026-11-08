@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zj.adb.view.RootTouchViewGroup android:id="@id/rootTouchGroup" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffffffff" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16.0dp">
+        <ImageView android:id="@id/channel_insert_pic_iv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_marginHorizontal="16.0dp" />
+        <ImageView android:id="@id/channel_insert_close_iv" android:background="@drawable/zjfl_bg_pop_bottom_close_black" android:padding="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginTop="5.0dp" android:src="@drawable/ad_sdk_icon_insert_close" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_marginEnd="5.0dp" />
+        <ImageView android:id="@id/iv_ad_icon" android:layout_width="45.0dp" android:layout_height="15.0dp" android:src="@drawable/ad_sdk_icon" android:scaleType="fitCenter" android:layout_below="@id/channel_insert_pic_iv" android:layout_alignTop="@id/llPopClick" android:layout_alignBottom="@id/llPopClick" android:layout_alignStart="@id/channel_insert_pic_iv" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llPopClick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/channel_insert_pic_iv" android:layout_alignEnd="@id/channel_insert_pic_iv" android:paddingVertical="5.0dp">
+            <ImageView android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/ad_sdk_icon_click_open" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即打开" android:layout_marginStart="5.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.zj.adb.view.RootTouchViewGroup>

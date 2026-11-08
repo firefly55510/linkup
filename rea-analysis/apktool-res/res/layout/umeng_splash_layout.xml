@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/umeng_splash_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="12.0dp" android:textColor="#ccffffff" android:gravity="center" android:layout_gravity="end|top" android:id="@id/umeng_splash_countdown_tv" android:background="@drawable/umeng_splash_skip" android:paddingLeft="8.0dp" android:paddingTop="4.0dp" android:paddingRight="8.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginEnd="12.0dp" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center|bottom" android:orientation="vertical" android:id="@id/umeng_splash_action_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dp">
+        <ImageView android:id="@id/umeng_splash_shake" android:layout_width="111.0dp" android:layout_height="110.0dp" android:layout_marginBottom="30.0dp" android:src="@drawable/umeng_union_splash_shake" android:scaleType="fitXY" />
+        <ImageView android:id="@id/umeng_splash_action" android:layout_width="273.0dp" android:layout_height="52.0dp" android:src="@drawable/umeng_union_splash_action" android:scaleType="fitXY" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="end|bottom" android:id="@id/umeng_splash_mark" android:layout_width="22.0dp" android:layout_height="10.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="12.0dp" android:src="@drawable/umeng_union_splash_mark" android:layout_marginEnd="12.0dp" />
+</FrameLayout>

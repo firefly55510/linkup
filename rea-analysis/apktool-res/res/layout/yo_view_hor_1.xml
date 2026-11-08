@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@mipmap/yo_back_d1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/yo_ad_container" android:background="@mipmap/yo_fore_d1" android:paddingTop="42.0dp" android:layout_width="match_parent" android:layout_height="420.0dp" android:layout_marginTop="150.0dp" android:paddingStart="62.0dp" android:paddingEnd="62.0dp" />
+    <FrameLayout android:id="@id/yo_interaction_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

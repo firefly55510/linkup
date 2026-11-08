@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ms_gdt_splash_tmp1_root" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meishu.sdk.core.view.RoundImageView android:id="@id/ms_gdt_splash_tmp1_img" android:layout_width="18.0dp" android:layout_height="18.0dp" android:scaleType="fitXY" app:ms_corner_radius="3.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/ms_gdt_splash_tmp1_cta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即进入" android:singleLine="true" />
+    <ImageView android:id="@id/ms_gdt_splash_tmp1_arrow" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/ms_down_arraw" android:scaleType="fitCenter" />
+</LinearLayout>

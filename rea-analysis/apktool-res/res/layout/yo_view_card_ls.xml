@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/yo_bg_card_ls" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/yo_product_icon" android:background="@drawable/yo_bg_trans_radius_4" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:scaleType="fitXY" android:layout_marginStart="16.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="96.0dp">
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/yo_product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="8.0dp" android:drawableEnd="@mipmap/yo_logo" android:layout_marginEnd="128.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="#fff7f2f2" android:ellipsize="end" android:id="@id/yo_product_desc" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="1" android:layout_marginEnd="128.0dp" />
+        <FrameLayout android:id="@id/yo_view_down_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginEnd="128.0dp" />
+    </LinearLayout>
+    <TextView android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="end|center" android:id="@id/yo_owner_submit" android:background="@drawable/yo_bg_btn_big_3" android:layout_width="wrap_content" android:layout_height="40.0dp" android:maxWidth="160.0dp" android:text="@string/yo_btn_submit" android:singleLine="true" android:paddingStart="24.0dp" android:paddingEnd="24.0dp" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp" />
+</FrameLayout>

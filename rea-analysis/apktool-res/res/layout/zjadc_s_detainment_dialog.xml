@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/zjadc_s_reward_video_root" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/zjadc_s_detainment_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dp">
+        <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/zjadc_s_detainment_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="130.0dp" android:text="观看15秒视频可获得奖励" android:layout_marginHorizontal="30.0dp" />
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="#fff97c7c" android:id="@id/zjadc_s_detainment_skip" android:background="@drawable/zjadc_s_detainment_dialog_skip_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:text="跳过广告" android:paddingHorizontal="30.0dp" android:paddingVertical="10.0dp" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/zjadc_s_detainment_continue" android:background="@drawable/zjadc_s_detainment_dialog_continue_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="继续观看" android:paddingHorizontal="30.0dp" android:paddingVertical="10.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/zjadc_s_ic_detainment_gift" android:layout_width="140.0dp" android:layout_height="170.0dp" />
+</FrameLayout>

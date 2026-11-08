@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/adscope_color_transparent_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="60.0dp">
+        <ImageView android:id="@id/asnp_download_detail_back" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/asnp_icon_back_left" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/asnp_download_detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout android:theme="@style/Theme.AppCompat" android:id="@id/asnp_download_detail_tab" android:layout_width="match_parent" android:layout_height="40.0dp">
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="功能介绍" />
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="隐私协议" />
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="权限详情" />
+    </com.google.android.material.tabs.TabLayout>
+    <View android:background="@color/adscope_view_divider_bg" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <FrameLayout android:id="@id/asnp_download_detail_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@id/asnp_download_detail_content" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </FrameLayout>
+    <com.beizi.fusion.asnp.adn.ad.ad.nativead.render.view.asnp.prefab.BasicWebView android:id="@id/asnp_download_detail_web" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

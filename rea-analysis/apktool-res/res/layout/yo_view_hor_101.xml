@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/yo_product_icon" android:background="@drawable/yo_bg_trans_radius_4" android:layout_width="50.0dp" android:layout_height="50.0dp" android:scaleType="fitXY" />
+        <TextView android:textSize="20.0sp" android:id="@id/yo_product_name" android:layout_marginStart="12.0dp" style="@style/yo_feed_title" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/yo_advance_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dp">
+        <com.zongliang.sdk.core.view.YoAdvanceLayout android:layout_gravity="center" android:id="@id/yo_advance_container" android:background="@drawable/yo_bg_trans_radius" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="100.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#ff143a81" android:id="@id/yo_product_desc" android:layout_marginTop="20.0dp" style="@style/yo_feed_summary" />
+</LinearLayout>

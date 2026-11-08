@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ms_dialog_layout" android:background="@drawable/ms_shape_download_alertdialog" android:paddingLeft="30.0dp" android:paddingRight="30.0dp" android:layout_width="311.0dp" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginRight="40.0dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dp">
+            <ImageView android:id="@id/ms_dialog_download_imageview" android:layout_width="60.0dp" android:layout_height="60.0dp" android:src="@drawable/ms_download_round" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginLeft="10.0dp">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/ms_dialog_download_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <View android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/ms_dialog_download_owner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/ms_dialog_download_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/ms_dialog_download_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="#ff3d5775" android:gravity="center" android:id="@id/ms_dialog_download_appdetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应用介绍" android:layout_weight="1.0" />
+            <View android:background="#ff999999" android:layout_width="1.0dp" android:layout_height="10.0dp" android:layout_marginLeft="3.0dp" android:layout_marginRight="3.0dp" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff3d5775" android:gravity="center" android:id="@id/ms_dialog_download_permission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="权限详情" android:layout_weight="1.0" />
+            <View android:id="@id/ms_dialog_download_divider" android:background="#ff999999" android:layout_width="1.0dp" android:layout_height="10.0dp" android:layout_marginLeft="3.0dp" android:layout_marginRight="3.0dp" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff3d5775" android:gravity="center" android:id="@id/ms_dialog_download_privacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="隐私协议" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/ms_dialog_download_downloadBtn" android:background="@drawable/ms_bg_button_blue" android:paddingTop="9.0dp" android:paddingBottom="9.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="立即下载" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:id="@id/ms_dialog_download_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="20.0dp" android:text="放弃下载" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/adgain_splash_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/adgain_splash_blur_image" android:background="@drawable/adgain_shape_blur_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <FrameLayout android:id="@id/adgain_splash_post_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/adgain_splash_post_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:minHeight="200.0dp" android:layout_centerInParent="true" />
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/adgain_splash_post_media" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="200.0dp" android:layout_centerInParent="true" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/adgain_splash_shake_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/adgain_splash_shake_layout" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="center" android:id="@id/adgain_splash_shake_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:text="@string/adgain_shake_see_detail" android:singleLine="true" android:layout_below="@id/adgain_splash_shake_layout" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/adgain_splash_sound_and_skip_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/adgain_splash_sound_image" android:visibility="visible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:src="@drawable/adgain_image_ad_sound_on" android:scaleType="centerCrop" />
+        <FrameLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/adgain_splash_skip_ll" android:background="@drawable/adgain_shape_skip_bt" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="20.0dp">
+                <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/adgain_splash_skip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adgain_skip5" />
+            </LinearLayout>
+            <com.adgain.sdk.base.view.SplashSkipButtonView android:id="@id/adgain_splash_skip_new_view" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="20.0dp" app:adgain_ssb_bg_color="#ffffffff" app:adgain_ssb_progress_color="#80ffffff" app:adgain_ssb_show_progress="true" app:adgain_ssb_text="跳过" app:adgain_ssb_text_color="#ff9a9a9a" app:adgain_ssb_text_size="13.0sp" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/adgain_splash_open_entry_layout" android:background="@drawable/adgain_shape_splash_open_entry_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="26.0dp" android:layout_marginTop="50.0dp" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" android:layout_alignParentEnd="true">
+        <com.adgain.sdk.base.natives.CircleImageView android:id="@id/adgain_splash_open_entry_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:scaleType="fitCenter" android:layout_marginEnd="6.0dp" />
+        <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:id="@id/adgain_splash_open_entry_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即打开" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/adgain_splash_icon_text_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" android:layout_marginBottom="50.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/cta_fl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/adgain_splash_cta_ll" android:background="@drawable/adgain_shape_cta_bt" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/adgain_splash_cta_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/adgain_splash_cta_bt_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.adgain.sdk.base.view.TbLightingAnimationView android:layout_gravity="center" android:id="@id/adgain_splash_cta_bt_gd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/adgain_splash_privacy_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <include layout="@layout/adgain_layout_native_privacy" />
+    </LinearLayout>
+    <ImageView android:gravity="center_vertical" android:id="@id/adgain_splash_logo_image" android:layout_width="wrap_content" android:layout_height="10.0dp" android:layout_margin="10.0dp" android:layout_marginBottom="15.0dp" android:src="@drawable/adgain_image_ad_logo" android:scaleType="centerCrop" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+</RelativeLayout>

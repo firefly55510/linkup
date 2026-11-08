@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/yo_owner_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toStartOf="@id/yo_owner_submit">
+        <TextView android:id="@id/yo_owner_title" android:layout_weight="1.0" style="@style/yo_feed_title" />
+        <TextView android:id="@id/yo_owner_summary" android:layout_weight="1.0" android:layout_alignParentBottom="true" style="@style/yo_feed_summary" />
+    </LinearLayout>
+    <TextView android:id="@id/yo_owner_submit" android:maxWidth="200.0dp" android:text="立即查看" android:layout_centerVertical="true" android:layout_toStartOf="@id/yo_owner_close" android:layout_alignParentEnd="true" style="@style/yo_feed_play" />
+</RelativeLayout>

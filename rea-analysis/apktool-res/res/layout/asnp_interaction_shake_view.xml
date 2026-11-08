@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/adscope_isv_container_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/adscope_isv_img_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/asnp_interaction_icon_shake" android:layout_centerInParent="true" />
+        <com.beizi.fusion.asnp.adn.ad.ad.nativead.render.view.asnp.prefab.ScopeIndicateArrowView android:id="@id/adscope_isv_indicate_arrow_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:id="@id/adscope_isv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_below="@id/adscope_isv_container_rl" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:id="@id/adscope_isv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/adscope_isv_title" android:layout_centerHorizontal="true" />
+</RelativeLayout>

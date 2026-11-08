@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bsyad_plg_bg_feed_container" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="5.0dp" android:paddingVertical="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/bsyad_plg_fl_container" android:layout_width="142.0dp" android:layout_height="80.0dp" android:layout_marginRight="10.0dp">
+        <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.ui.view.BSYAdRoundImageView android:id="@id/bsyad_plg_iv_feed_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.adx.ad.feed.view.AdxPlgFeedVideoView android:id="@id/bsyad_plg_fl_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.ui.view.AdInteractionView android:id="@id/bsyad_plg_interaction_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/bsyad_plg_feed_title_text_size" android:textColor="@color/bsyad_plg_feed_title_text_color" android:id="@id/bsyad_plg_tv_feed_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginRight="5.0dp" android:maxLines="2" android:layout_toRightOf="@id/bsyad_plg_fl_container" android:layout_alignParentRight="true" />
+    <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.adx.ui.view.AdxPlgFeedAttachView android:id="@id/bsyad_plg_attach_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="2.0dp" android:layout_toRightOf="@id/bsyad_plg_fl_container" android:layout_alignBottom="@id/bsyad_plg_fl_container" />
+    <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.adx.ui.view.AdxPlgComplianceView android:id="@id/bsyad_plg_compliance_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_below="@id/bsyad_plg_fl_container" android:layout_marginHorizontal="5.0dp" />
+</RelativeLayout>

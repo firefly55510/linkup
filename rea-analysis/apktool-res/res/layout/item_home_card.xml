@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="320.0dp" android:layout_height="match_parent" android:layout_margin="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="2.0dp" android:layout_marginRight="2.0dp" android:layout_marginBottom="8.0dp" app:cardCornerRadius="15.0dp" app:cardElevation="0.0dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.exoplayer2.ui.PlayerView android:id="@id/videoView" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" app:resize_mode="zoom" app:surface_type="texture_view" app:use_controller="false" />
+            <ImageView android:id="@id/card_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shadow_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center" android:id="@id/name_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/card_name" android:background="@drawable/radius_0_9221_0221" android:paddingLeft="16.0dp" android:paddingTop="7.0dp" android:paddingRight="16.0dp" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    <com.donkingliang.labels.LabelsView android:id="@id/labelView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" app:labelBackground="@drawable/radius_100_black_aa" app:labelTextColor="@color/color_e" app:labelTextPaddingBottom="3.0dp" app:labelTextPaddingLeft="12.0dp" app:labelTextPaddingRight="12.0dp" app:labelTextPaddingTop="3.0dp" app:labelTextSize="13.0sp" app:maxLines="1" app:maxSelect="0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/center_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="15.0dp">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/album" android:background="@drawable/radius_8_black_a64" android:paddingLeft="10.0dp" android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="8.0dp" android:src="@drawable/ic_home_select_album" />
+                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="亲密相册" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/harem" android:background="@drawable/radius_8_black_a64" android:paddingLeft="10.0dp" android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0">
+                            <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="8.0dp" android:src="@drawable/ic_home_select_harem" />
+                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加入后宫" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="15.0dp">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/friend" android:background="@drawable/radius_8_black_a64" android:paddingLeft="10.0dp" android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="8.0dp" android:src="@drawable/ic_home_select_friend" />
+                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="朋友圈" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/camera" android:background="@drawable/radius_8_black_a64" android:paddingLeft="10.0dp" android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0">
+                            <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="8.0dp" android:src="@drawable/ic_home_select_camera" />
+                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="合照" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:ellipsize="end" android:id="@id/details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="26.0dp" android:maxLines="2" android:lineSpacingExtra="5.0dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_home_select_card_bottom" android:adjustViewBounds="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

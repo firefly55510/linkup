@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/zjadc_group" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/zjadc_iv_ad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="100.0dp" />
+        <com.zj.ada.ys.biz.loader.view.template.ratioview.RatioFrameLayout android:layout_gravity="center" android:id="@id/zjadc_fl_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100.0dp" app:datumRatio="datumWidth" app:heightRatio="9.0" app:widthRatio="16.0" />
+        <ImageView android:id="@id/zjadc_iv_mute" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:src="@drawable/zjadc_icn_volume_on" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/zjadc_iv_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginStart="5.0dp" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/zjadc_tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/zjadc_iv_icon" />
+        <ImageView android:id="@id/zjadc_iv_logo" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginTop="5.0dp" android:layout_below="@id/zjadc_tv_title" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/zjadc_tv_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_below="@id/zjadc_tv_title" android:layout_marginStart="5.0dp" android:layout_toEndOf="@id/zjadc_iv_logo" />
+        <Button android:textSize="11.0sp" android:textColor="@color/zjadc_ad_sdk_white" android:id="@id/zjadc_btn_action" android:background="@drawable/zjadc_ad_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_alignTop="@id/zjadc_iv_logo" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" android:layout_marginEnd="5.0dp" android:layout_toStartOf="@id/zjadc_iv_cancel" />
+        <ImageView android:gravity="center_vertical" android:id="@id/zjadc_iv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zjadc_icn_close" android:layout_alignTop="@id/zjadc_iv_logo" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

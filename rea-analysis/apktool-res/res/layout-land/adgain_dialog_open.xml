@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/adgain_shape_open_dialog_bg" android:paddingTop="14.0dp" android:paddingBottom="16.0dp" android:layout_width="320.0dp" android:layout_height="wrap_content" android:layout_centerInParent="true" android:paddingStart="18.0dp" android:paddingEnd="18.0dp">
+        <TextView android:textSize="22.0sp" android:textStyle="bold|italic" android:textColor="#ffffac26" android:layout_gravity="center_horizontal" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X秒更快拿奖励" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff030303" android:layout_gravity="center_horizontal" android:id="@id/dialog_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="直接点击并浏览广告详情15秒即可获得奖励~" android:maxLines="1" />
+        <RelativeLayout android:background="@drawable/adgain_shape_open_app_bg" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp">
+            <com.adgain.sdk.base.view.RoundImageView android:id="@id/app_icon" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/adgain_round_bg" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff030303" android:id="@id/app_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Title TitleTitleTitle Title TitleTitleTitle" android:maxLines="1" android:singleLine="true" android:layout_marginStart="15.0dp" android:layout_toEndOf="@id/app_icon" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff363636" android:id="@id/app_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:hint="Des" android:maxLines="1" android:singleLine="true" android:layout_below="@id/app_name" android:layout_marginStart="15.0dp" android:layout_toEndOf="@id/app_icon" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/dialog_continue_btn" android:background="@drawable/adgain_shape_cta_bg" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="14.0dp" android:text="我要更快拿奖励" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/yo_product_icon" android:background="@drawable/yo_bg_trans_radius_4" android:layout_width="108.0dp" android:layout_height="108.0dp" android:scaleType="fitXY" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/yo_product_name" android:layout_marginTop="10.0dp" style="@style/yo_feed_title" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff143a81" android:gravity="center" android:id="@id/yo_product_desc" android:layout_marginTop="20.0dp" style="@style/yo_feed_summary" />
+</LinearLayout>

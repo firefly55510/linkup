@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_margin="10.0dp" android:src="@android:drawable/stat_sys_download" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="7.0">
+        <TextView android:gravity="center_vertical" android:id="@id/download_notify_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="title" android:layout_weight="1.0" />
+        <ProgressBar android:id="@id/download_notify_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/download_notify_start" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_margin="5.0dp" android:src="@android:drawable/ic_media_play" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/download_notify_cancel" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_margin="5.0dp" android:src="@android:drawable/ic_menu_close_clear_cancel" android:layout_weight="1.0" />
+</LinearLayout>

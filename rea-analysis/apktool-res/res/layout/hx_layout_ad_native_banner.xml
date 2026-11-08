@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="80.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="5.0dp" android:layout_marginEnd="24.0dp">
+        <com.huanxiao.sdk.widget.RatioFrameLayout android:id="@id/fl_container" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/iv_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:contentDescription="@null" />
+            <include android:id="@id/hx_widget_player" android:visibility="gone" layout="@layout/hx_widget_player" />
+            <com.huanxiao.sdk.widget.HXMagicInteractPanel android:layout_gravity="center" android:id="@id/magic_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <include android:layout_gravity="start|bottom" android:id="@id/v_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/hx_layout_ad_native_flag" />
+        </com.huanxiao.sdk.widget.RatioFrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="3.0" android:layout_marginStart="8.0dp">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/hx_333333" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/hx_9d9c9c" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.huanxiao.sdk.widget.HXImageView android:layout_gravity="end|top" android:id="@id/iv_close" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/hx_native_close" android:contentDescription="@null" android:layout_marginEnd="6.0dp" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/yo_bg_duration" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/yo_video_duration" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12s" android:layout_marginHorizontal="12.0dp" />
+    <View android:id="@id/yo_video_duration_divider" android:background="#ffdbdbdb" android:visibility="visible" android:layout_width="1.0dp" android:layout_height="12.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/yo_video_duration_skip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳过" android:layout_marginHorizontal="12.0dp" />
+    <ImageView android:id="@id/yo_video_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/yo_close" />
+</LinearLayout>

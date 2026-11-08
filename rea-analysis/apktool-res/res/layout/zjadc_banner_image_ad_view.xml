@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zj.ada.ys.biz.loader.view.template.ratioview.RatioImageView android:id="@id/ad_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <LinearLayout android:id="@id/ad_logo_layout" android:background="@drawable/zjadc_ad_sdk_tip_bg" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+        <ImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/zjadc_img_logo" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/zjadc_ad_sdk_white" android:id="@id/ad_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zjadc_ad_sdk_tip" />
+    </LinearLayout>
+    <ImageView android:id="@id/ad_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:src="@drawable/zjadc_ad_sdk_icn_close" android:layout_alignParentEnd="true" />
+</RelativeLayout>

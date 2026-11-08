@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+        <ImageView android:id="@id/back" android:padding="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_back_white" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="创建角色" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20.0dp">
+            <RelativeLayout android:background="@drawable/bg_create_role_img" android:layout_width="180.0dp" android:layout_height="250.0dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/addImg" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_add" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/color_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="添加形象图*" />
+                </LinearLayout>
+                <androidx.cardview.widget.CardView android:id="@id/img_card" android:visibility="gone" android:layout_width="180.0dp" android:layout_height="250.0dp">
+                    <ImageView android:id="@id/img" android:layout_width="180.0dp" android:layout_height="250.0dp" android:scaleType="centerCrop" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/radius_10_1e1" android:paddingLeft="20.0dp" android:paddingTop="25.0dp" android:paddingRight="20.0dp" android:paddingBottom="25.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_eb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="角色名称*" />
+                <EditText android:textSize="16.0sp" android:textColor="@color/white" android:textColorHint="@color/color_ae" android:id="@id/name" android:background="@drawable/radius_10_c3" android:paddingLeft="25.0dp" android:paddingTop="10.0dp" android:paddingRight="25.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="" android:hint="给角色起一个名字" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_eb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="性别*" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/color_796" android:id="@id/boy" android:background="@drawable/radius_100_796_line" android:paddingLeft="35.0dp" android:paddingTop="10.0dp" android:paddingRight="35.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="男性" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/color_eb" android:id="@id/girl" android:background="@drawable/radius_100_343_line" android:paddingLeft="35.0dp" android:paddingTop="10.0dp" android:paddingRight="35.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="女性" />
+                </LinearLayout>
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_eb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="角色设定*" />
+                <EditText android:textSize="16.0sp" android:textColor="@color/white" android:textColorHint="@color/color_ae" android:gravity="top" android:id="@id/character" android:background="@drawable/radius_10_c3" android:paddingLeft="25.0dp" android:paddingTop="10.0dp" android:paddingRight="25.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="" android:hint="详细描述角色的性格、背景、说话方式等..." android:minLines="6" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_eb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="开场白*" />
+                <EditText android:textSize="16.0sp" android:textColor="@color/white" android:textColorHint="@color/color_ae" android:gravity="top" android:id="@id/welcome" android:background="@drawable/radius_10_c3" android:paddingLeft="25.0dp" android:paddingTop="10.0dp" android:paddingRight="25.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="" android:hint="请详细描述角色的欢迎语..." android:minLines="6" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_eb" android:gravity="center" android:id="@id/button" android:background="@drawable/radius_100_796" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="40.0dp" android:text="发布" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

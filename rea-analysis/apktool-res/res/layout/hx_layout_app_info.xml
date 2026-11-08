@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/hx_bg_app_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="13.0dp" android:paddingHorizontal="10.0dp" android:paddingVertical="15.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huanxiao.sdk.widget.RoundedImageView android:id="@id/iv_icon" android:layout_width="58.0dp" android:layout_height="58.0dp" />
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/v_app_name" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/hx_black" android:ellipsize="end" android:id="@id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+            <include android:id="@id/v_ad_native_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6.0dp" layout="@layout/hx_layout_ad_native_flag" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/hx_black80" android:ellipsize="end" android:layout_gravity="start|top" android:id="@id/tv_app_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/hx_compliance_additional_info" android:lines="1" android:layout_below="@id/v_app_name" />
+    </RelativeLayout>
+    <com.huanxiao.sdk.widget.HXShapeTextView android:textSize="12.0sp" android:textColor="@color/hx_white" android:gravity="center" android:id="@id/button" android:background="@color/hx_17adfa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="8.0dp" android:paddingHorizontal="8.0dp" android:paddingVertical="5.0dp" app:hx_shape_radius="5.0dp" app:hx_shape_solidColor="#fff9770e" />
+</LinearLayout>

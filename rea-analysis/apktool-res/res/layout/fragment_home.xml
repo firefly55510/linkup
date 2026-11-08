@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_home" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/select_btn" android:layout_width="90.0dp" android:layout_height="wrap_content" android:src="@drawable/ic_home_select_true" android:adjustViewBounds="true" />
+            <ImageView android:id="@id/all_btn" android:layout_width="90.0dp" android:layout_height="wrap_content" android:src="@drawable/ic_home_all_false" android:adjustViewBounds="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/gender_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/gender_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="女生" />
+            <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="4.0dp" android:src="@drawable/ic_gender_change" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8.0dp" />
+</LinearLayout>

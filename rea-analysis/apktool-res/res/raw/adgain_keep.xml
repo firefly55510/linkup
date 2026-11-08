@@ -1,0 +1,3 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName"
+    tools:keep="@drawable/adgain_*,@layout/adgain_*,@id/adgain_**,@style/adgain_*,@string/adgain_*,@anim/adgain_*,@color/adgain_*,@attr/adgain_*,@dimen/adgain_*" />

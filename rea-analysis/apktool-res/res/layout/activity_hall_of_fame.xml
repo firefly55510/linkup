@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_1e1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bg_ranking_top" android:adjustViewBounds="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/topView" android:padding="5.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+            <ImageView android:id="@id/name_tv" android:layout_width="wrap_content" android:layout_height="35.0dp" android:src="@drawable/ic_halloffame_title" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/back" android:padding="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_back_white" />
+            <ImageView android:id="@id/btn_feedback" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/ic_feedback" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="400.0dp" android:layout_marginTop="20.0dp">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/carousel_recycler_view" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="65.0dp" android:paddingEnd="65.0dp" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="45.0dp" android:layout_marginTop="45.0dp" android:layout_marginRight="45.0dp" android:text="个人简介:" android:fontFamily="@font/source_han_serif_cn_heavy" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white_alpha_aa" android:ellipsize="end" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="45.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="45.0dp" android:text="" android:maxLines="4" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="13.0sp" android:textColor="#fff2c4ff" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/0" />
+            <ImageView android:id="@id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="25.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/bt_home_click" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

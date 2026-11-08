@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huanxiao.sdk.widget.RatioFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/middle_content" android:background="@color/hx_black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.huanxiao.sdk.widget.ADContentView android:id="@id/v_ad_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <include android:id="@id/hx_widget_player" android:visibility="gone" layout="@layout/hx_widget_player" />
+        <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/iv_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/hx_layout_app_info" />
+    </FrameLayout>
+    <include layout="@layout/hx_fragment_end_page" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="end|top" android:orientation="horizontal" android:id="@id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_18">
+        <ImageView android:id="@id/iv_btn_mute" android:visibility="gone" android:layout_width="26.0dp" android:layout_height="26.0dp" android:src="@drawable/hx_btn_mute_selector" />
+        <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/dp_8" />
+        <com.huanxiao.sdk.widget.HXShapeTextView android:textSize="12.0sp" android:textColor="@color/hx_white" android:id="@id/tv_reward_status" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:paddingHorizontal="9.0dp" android:paddingVertical="4.0dp" app:hx_shape_radius="13.0dp" app:hx_shape_solidColor="#66000000" app:hx_shape_strokeColor="#66ffffff" app:hx_shape_strokeSize="0.6700001dp" />
+        <com.huanxiao.sdk.widget.HXImageView android:id="@id/iv_close" android:visibility="invisible" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_margin="8.0dp" android:src="@drawable/hx_btn_close" />
+    </LinearLayout>
+    <include layout="@layout/hx_layout_notification_bar" />
+    <include layout="@layout/hx_layout_pop_reward" />
+    <com.huanxiao.sdk.widget.HXMagicInteractPanel android:layout_gravity="center" android:id="@id/magic_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200.0dp" />
+    <com.huanxiao.sdk.widget.ComplianceTextView android:textSize="10.0sp" android:textColor="#99ffffff" android:layout_gravity="bottom" android:id="@id/tv_compliance" android:background="@drawable/hx_compliance_reward_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="120.0dp" android:layout_marginHorizontal="@dimen/dp_16" android:paddingHorizontal="8.0dp" android:paddingVertical="12.0dp" app:hx_privacy_color="#99ffffff" />
+</com.huanxiao.sdk.widget.RatioFrameLayout>

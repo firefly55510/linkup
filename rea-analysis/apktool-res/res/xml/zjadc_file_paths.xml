@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="zjadc_external_root" path="." />
+    <external-path name="zjadc_external_download" path="zjadc_download" />
+    <external-files-path name="zjadc_external_files_download" path="zjadc_download" />
+    <files-path name="zjadc_internal_file_download" path="zjadc_download" />
+    <cache-path name="zjadc_internal_cache_download" path="zjadc_download" />
+    <external-cache-path name="zjadc_external_cache_download" path="zjadc_download" />
+</paths>

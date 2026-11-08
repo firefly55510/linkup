@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/u_push_notification_top" android:paddingLeft="12.0dp" android:paddingTop="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/u_push_notification_icon" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff252934" android:ellipsize="end" android:id="@id/u_push_notification_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/u_push_notification_icon" android:layout_toStartOf="@id/u_push_notification_icon" />
+        <TextView android:textSize="13.299988sp" android:textColor="#ff252934" android:ellipsize="end" android:id="@id/u_push_notification_content" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:scrollHorizontally="false" android:singleLine="true" android:layout_toLeftOf="@id/u_push_notification_icon" android:layout_below="@id/u_push_notification_title" android:marqueeRepeatLimit="marquee_forever" android:layout_toStartOf="@id/u_push_notification_icon" />
+    </RelativeLayout>
+    <ImageView android:id="@id/u_push_notification_banner_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+</LinearLayout>

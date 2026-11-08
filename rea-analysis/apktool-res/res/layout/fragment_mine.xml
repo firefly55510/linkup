@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_15" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bg_mine_top" android:adjustViewBounds="true" />
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.scwang.smart.refresh.header.ClassicsHeader android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:id="@id/menu" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dp" android:layout_alignParentRight="true">
+                    <ImageView android:id="@id/customer" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_mine_customer" />
+                    <ImageView android:id="@id/setting" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="16.0dp" android:src="@drawable/ic_mine_setting" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/head_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginTop="15.0dp" android:layout_below="@id/menu">
+                    <RelativeLayout android:layout_width="90.0dp" android:layout_height="90.0dp">
+                        <androidx.cardview.widget.CardView android:id="@id/headImg_cardview" android:layout_width="74.0dp" android:layout_height="74.0dp" android:layout_centerInParent="true" app:cardCornerRadius="100.0dp" app:cardElevation="0.0dp">
+                            <ImageView android:id="@id/headImg" android:layout_width="74.0dp" android:layout_height="74.0dp" />
+                        </androidx.cardview.widget.CardView>
+                        <ImageView android:id="@id/headImg_border" android:visibility="gone" android:layout_width="90.0dp" android:layout_height="90.0dp" android:src="@drawable/ic_headimg_kuang" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp">
+                        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户123456789" android:layout_toRightOf="@id/headImg_cardview" android:layout_centerHorizontal="true" />
+                            <ImageView android:id="@id/vip_icon" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:src="@drawable/ic_zuan_vip" android:adjustViewBounds="true" />
+                        </LinearLayout>
+                        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/change_name" android:background="@drawable/radius_100_796_ff5" android:paddingLeft="12.0dp" android:paddingTop="3.0dp" android:paddingRight="12.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="更改昵称" android:layout_toRightOf="@id/headImg_cardview" android:layout_below="@id/name" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="25.0dp" android:layout_marginRight="16.0dp" android:layout_below="@id/head_layout">
+                    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bg_mine_vip_top" android:adjustViewBounds="true" />
+                    <LinearLayout android:gravity="center" android:id="@id/goCurrency" android:layout_width="match_parent" android:layout_height="35.0dp">
+                        <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="3.0dp" android:src="@drawable/ic_currency" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="心动币" />
+                        <TextView android:background="@drawable/radius_100_f4d" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/currencyCoin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="购买" />
+                        <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="3.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/ic_next" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@id/vip_layout" android:background="@drawable/bg_mine_vip" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="60.0dp" android:layout_marginRight="16.0dp" android:layout_below="@id/head_layout">
+                    <TextView android:textSize="8.0sp" android:textColor="#ffa885ed" android:id="@id/vip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="解锁私密羁绊剧情，随心沉溺亲密对话" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="#fffee5fe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="超多会员权益，玩转角色世界" android:layout_centerVertical="true" />
+                    <TextView android:textSize="9.0sp" android:textColor="#ff9893a1" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="独享暧昧私密互动，温存对话不必克制" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <LinearLayout android:id="@id/content_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="15.0dp" android:layout_below="@id/vip_layout">
+                    <LinearLayout android:gravity="center" android:id="@id/message_layout" android:background="@drawable/radius_100_15_line3" android:padding="15.0dp" android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_mine_message" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息" />
+                            <TextView android:textSize="9.0sp" android:textColor="@color/color_9" android:id="@id/message_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="点击查看全部消息" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@id/creator_layout" android:background="@drawable/radius_100_15_line3" android:padding="15.0dp" android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_weight="1.0">
+                        <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_mine_creator" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="创作者合作" />
+                            <TextView android:textSize="9.0sp" android:textColor="@color/color_9" android:id="@id/creator_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="如创作AI人物、场景等" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.cardview.widget.CardView android:id="@id/bannerCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp" android:layout_below="@id/content_layout">
+                    <ImageView android:id="@id/banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+                </androidx.cardview.widget.CardView>
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/my_role" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp" android:text="我的角色" android:layout_below="@id/bannerCard" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:layout_below="@id/my_role" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</RelativeLayout>

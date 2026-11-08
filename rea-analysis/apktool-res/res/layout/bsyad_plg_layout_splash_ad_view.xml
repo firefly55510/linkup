@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_ad_root" android:background="@color/bsyad_plg_color_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/bsyad_plg_fl_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/bsyad_plg_img_adbiding_splash" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.adx.ad.splash.view.AdxPlgSplashVideoView android:id="@id/bsyad_plg_fl_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.ui.view.AdInteractionView android:layout_gravity="bottom" android:id="@id/bsyad_plg_interaction_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:layout_marginBottom="40.0dp" />
+    <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.adx.ui.view.AdxPlgComplianceView android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/bsyad_plg_compliance_view" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp" />
+    <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.adx.ui.view.AdPlgFeedbackEntryView android:id="@id/bsyad_plg_tv_ad_feedback" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginTop="15.0dp" android:includeFontPadding="false" android:layout_marginStart="12.0dp" android:paddingHorizontal="15.0dp" />
+    <FrameLayout android:layout_gravity="end|top" android:id="@id/bsyad_plg_fl_topright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginEnd="12.0dp">
+        <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.adx.ui.view.AdxPlgCircleCountDownSkipView android:id="@id/bsyad_plg_btn_skip_countdown" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/bsyad_plg_tv_cta_cli" android:background="@drawable/bsyad_plg_bg_splash_ad_skip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dp" android:text="跳转第三方应用/页面" android:paddingHorizontal="12.0dp" />
+    </FrameLayout>
+    <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.adx.ui.view.AdxPlgCircleCountDownSkipView android:layout_gravity="bottom" android:id="@id/bsyad_plg_btn_circle_skip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginBottom="22.0dp" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bg_inspiration_suggestion" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/label" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginLeft="16.0dp" android:src="@drawable/ic_write" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/gang" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginLeft="16.0dp" android:src="@drawable/ic_xiegang" android:layout_toRightOf="@id/label" android:layout_centerVertical="true" />
+    <TextView android:id="@id/line" android:background="@color/white_alpha_20" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:layout_toRightOf="@id/gang" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:id="@id/tv_suggestion" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/app_name" android:layout_toRightOf="@id/gang" android:layout_above="@id/line" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/app_name" android:layout_toRightOf="@id/gang" android:layout_below="@id/line" />
+</RelativeLayout>
