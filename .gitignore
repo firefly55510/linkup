@@ -1,0 +1,2 @@
+# 逆向分析中间产物：pkg 解包出的原始 Payload（>100MB，超出 GitHub 单文件限制）
+iOS/rea-analysis/extracted/
