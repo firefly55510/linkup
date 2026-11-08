@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_15" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_c" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新用户引导1/2" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_c" android:id="@id/jump_btn" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳过" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="80.0dp" android:layout_below="@id/top_layout">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/gender_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="你的性别*" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/boy" android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/boy_img" android:layout_width="90.0dp" android:layout_height="90.0dp" android:src="@drawable/ic_boy_false" android:adjustViewBounds="true" />
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/boy_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="男生" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/girl" android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/girl_img" android:layout_width="90.0dp" android:layout_height="90.0dp" android:src="@drawable/ic_girl_true" android:adjustViewBounds="true" />
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_796" android:id="@id/girl_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="女生" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/hobby_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dp">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="你的喜好*" />
+                <ImageView android:id="@id/hobby_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:src="@drawable/ic_guidance_hobby" android:adjustViewBounds="true" />
+                <com.donkingliang.labels.LabelsView android:id="@id/labelView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" app:labelBackground="@drawable/selector_guidance_label_bg" app:labelGravity="center" app:labelTextColor="@color/selector_guidance_label_text_color" app:labelTextPaddingBottom="6.0dp" app:labelTextPaddingLeft="20.0dp" app:labelTextPaddingRight="20.0dp" app:labelTextPaddingTop="6.0dp" app:labelTextSize="16.0sp" app:lineMargin="12.0dp" app:maxSelect="10" app:selectType="MULTI" app:wordMargin="15.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/next_btn" android:background="@drawable/selector_guidance_next_btn" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="30.0dp" android:text="下一步" android:layout_alignParentBottom="true" />
+</RelativeLayout>

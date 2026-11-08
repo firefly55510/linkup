@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/bsyad_plg_color_half_transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bsyad_plg_bg_reward_back_dialog" android:paddingTop="24.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24.0dp" android:paddingEnd="24.0dp" android:layout_marginHorizontal="20.0dp">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/bsyad_plg_color_blue" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="温馨提示" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/syad_tv_reward_back_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="体验几秒就能领奖~\n确定要退出吗？" android:lineSpacingMultiplier="1.2" />
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/bsyad_plg_tv_sure" android:background="@drawable/bsyad_plg_bg_reward_back_dialog_button" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="24.0dp" android:text="去领取奖励" android:stateListAnimator="@null" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffbdbdbd" android:id="@id/bsyad_plg_tv_cancel" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="坚持退出" />
+    </LinearLayout>
+</FrameLayout>

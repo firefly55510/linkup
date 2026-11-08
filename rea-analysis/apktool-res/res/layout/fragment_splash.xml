@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/openImg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/pressedImg" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+    <Button android:id="@id/button" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="224.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/ic_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="观看视频即可解锁18禁内容" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/r18_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/r18_tip" android:adjustViewBounds="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/draggableImg" android:focusable="true" android:clickable="true" android:layout_width="52.0dp" android:layout_height="52.0dp" android:src="@drawable/ads_thumb_seek" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_alignParentStart="true" android:elevation="10.0dp" />
+</RelativeLayout>

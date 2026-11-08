@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ad_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/ad_actionBar_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/ks_native_item_app_download" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginTop="4.0dp">
+        <ImageView android:id="@id/ksad_logo_icon" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="3.0dp" android:layout_marginRight="2.0dp" android:src="@drawable/test_logo_gray" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff9c9c9c" android:gravity="center_vertical" android:id="@id/ksad_logo_text" android:paddingLeft="2.0dp" android:paddingRight="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="广告" android:layout_toRightOf="@id/ksad_logo_icon" android:layout_centerVertical="true" android:fontFamily="sans-serif-condensed-light" />
+        <ImageView android:id="@id/ad_dislike" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/test_dislike_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

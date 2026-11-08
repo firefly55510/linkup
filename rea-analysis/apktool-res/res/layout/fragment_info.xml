@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/radius_8_241" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标签" />
+        <com.donkingliang.labels.LabelsView android:id="@id/labelsView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" app:labelBackground="@drawable/radius_100_black_a4d" app:labelTextColor="@color/color_e" app:labelTextPaddingBottom="3.0dp" app:labelTextPaddingLeft="12.0dp" app:labelTextPaddingRight="12.0dp" app:labelTextPaddingTop="3.0dp" app:labelTextSize="13.0sp" app:wordMargin="12.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/radius_8_241" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人物档案" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_e" android:id="@id/roleProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/radius_8_241" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="20.0dp">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="介绍" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_e" android:id="@id/tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="" android:lineSpacingExtra="5.0dp" />
+    </LinearLayout>
+</LinearLayout>

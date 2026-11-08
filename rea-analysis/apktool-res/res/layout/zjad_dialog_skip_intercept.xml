@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#80000000" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/zjad_dialog_bg_with_shadow" android:padding="0.0dp" android:layout_width="320.0dp" android:layout_height="wrap_content" android:layout_centerInParent="true" android:elevation="8.0dp">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/zjad_dialog_top_bg" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+                <TextView android:textSize="20.0sp" android:layout_width="24.0dp" android:layout_height="24.0dp" android:text="⚠️" android:layout_marginEnd="12.0dp" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/dialog_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="再看X秒，即可获得奖励" android:layout_weight="1.0" android:lineSpacingMultiplier="1.2" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/dialog_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:text="请耐心观看完整视频，即可获得丰厚奖励！" android:lineSpacingMultiplier="1.3" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/zjad_dialog_bottom_bg" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/dialog_continue_btn" android:background="@drawable/zjad_continue_btn" android:focusable="true" android:clickable="true" android:layout_width="0.0dp" android:layout_height="48.0dp" android:text="继续观看" android:layout_weight="1.0" android:layout_marginEnd="8.0dp" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/dialog_exit_btn" android:background="@drawable/zjad_exit_btn" android:focusable="true" android:clickable="true" android:layout_width="0.0dp" android:layout_height="48.0dp" android:text="坚持退出" android:layout_weight="1.0" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

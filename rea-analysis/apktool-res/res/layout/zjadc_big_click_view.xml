@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/zjadc_bg_ad_click" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/zjadc_lav_click" android:layout_width="36.0dp" android:layout_height="36.0dp" />
+    <TextView android:textSize="22.0sp" android:textColor="@color/zjadc_ad_sdk_white" android:gravity="center" android:id="@id/zjadc_content_tv" android:layout_width="wrap_content" android:layout_height="75.0dp" android:text="@string/zjadc_ad_click_tip" />
+</LinearLayout>

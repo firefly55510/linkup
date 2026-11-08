@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/landing_page_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/landing_page_container" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16.0sp" android:id="@id/landing_page_close" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="10.0dp" android:text="@string/adscope_webview_close_text" />
+        <View android:id="@id/landing_page_divider" android:background="@color/adscope_color_transparent_white" android:layout_width="match_parent" android:layout_height="0.20000005dp" />
+        <com.beizi.fusion.asnp.adn.ad.ad.nativead.render.view.asnp.prefab.LandingPageWebView android:id="@id/landing_page_main" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/yo_ad_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zongliang.sdk.core.view.YoAdvanceLayout android:id="@id/yo_ad_advance_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:wh_ratio="0.5625">
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/yo_view_normal" />
+    </com.zongliang.sdk.core.view.YoAdvanceLayout>
+    <FrameLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+        <include layout="@layout/yo_view_ls_104_card" />
+        <FrameLayout android:layout_gravity="start|bottom" android:id="@id/yo_view_down_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="56.0dp" />
+        <ImageView android:layout_gravity="end|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:src="@mipmap/yo_logo" android:layout_marginEnd="16.0dp" />
+    </FrameLayout>
+</LinearLayout>

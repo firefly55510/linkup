@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_1e1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bg_ranking_top" android:adjustViewBounds="true" />
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.scwang.smart.refresh.header.ClassicsHeader android:id="@id/classicsHeader" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="55.0dp" android:layout_marginRight="15.0dp" />
+        <com.scwang.smart.refresh.footer.ClassicsFooter android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:background="@drawable/fl_adx_shake_bg_template" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fl.saas.adx.base.widget.ShakeView android:id="@id/yd_shake_view" android:layout_width="50.0dp" android:layout_height="50.0dp" android:alpha="0.0" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="8.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/tv_fl_shake_bottom_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fl_adx_click_tips" />
+    </LinearLayout>
+</RelativeLayout>

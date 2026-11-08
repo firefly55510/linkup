@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title" android:background="#fff8f8f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_title" android:layout_height="48.0dp" android:layout_toLeftOf="@id/iv_close" android:layout_toRightOf="@id/iv_back" android:layout_centerVertical="false" style="@style/hx_title_text" />
+        <ImageView android:id="@id/iv_back" android:background="?android:listChoiceBackgroundIndicator" android:padding="@dimen/dp_12" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/hx_btn_title_bar_back" android:scaleType="centerInside" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/iv_close" android:background="?android:listChoiceBackgroundIndicator" android:padding="@dimen/dp_12" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/hx_btn_title_bar_close" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.huanxiao.sdk.widget.ADWebView android:id="@id/webview" android:background="@color/hx_white" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

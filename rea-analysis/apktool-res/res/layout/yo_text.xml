@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/yo_bg_white_radius" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/yo_text_title" android:gravity="center" android:id="@id/yo_dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" />
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/yo_dialog_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="300.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" />
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+        <ImageView android:layout_gravity="center" android:id="@id/yo_close" android:background="@drawable/yo_bg_duration" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/yo_close_white" />
+    </FrameLayout>
+</LinearLayout>

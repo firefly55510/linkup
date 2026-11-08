@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huanxiao.sdk.widget.RatioLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huanxiao.sdk.widget.RatioFrameLayout android:id="@id/fl_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/media_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <include android:id="@id/hx_widget_player" android:visibility="gone" layout="@layout/hx_widget_player" />
+            <ImageView android:id="@id/iv_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:contentDescription="@null" />
+        </FrameLayout>
+        <com.huanxiao.sdk.widget.ComplianceTextView android:textSize="8.0sp" android:textColor="#99ffffff" android:id="@id/tv_compliance" android:background="@drawable/hx_native_app_info_top_bg" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:hx_privacy_color="#99ffffff" />
+        <com.huanxiao.sdk.widget.HXMagicInteractPanel android:layout_gravity="center" android:id="@id/magic_panel" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.huanxiao.sdk.widget.RatioFrameLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/hx_black" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="2" />
+    <include layout="@layout/hx_layout_ad_native_bottom_bar" />
+</com.huanxiao.sdk.widget.RatioLinearLayout>

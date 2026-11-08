@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff15141a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@id/webView" android:layout_width="0.0dp" android:layout_height="0.0dp" android:alpha="0.0" app:layout_constraintBottom_toTopOf="@id/bottomNavigation" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.fragment.app.FragmentContainerView android:id="@id/fragmentContainer" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/bottomNavigation" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/bottomNavigation" android:background="#ff15141a" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" app:itemIconSize="25.0dp" app:itemTextAppearanceActive="@style/BottomNavTextAppearance" app:itemTextAppearanceInactive="@style/BottomNavTextAppearance" app:itemTextColor="@color/menu_txt_color_selector" app:labelVisibilityMode="labeled" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:menu="@menu/bottom_navigation_menu" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:id="@id/newTask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dp" android:layout_marginRight="5.0dp" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/zuan" android:background="@drawable/radius_100_36" android:padding="5.0dp" android:layout_width="52.0dp" android:layout_height="52.0dp" android:src="@drawable/ic_zuan" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0dp" android:textColor="@color/white" android:background="@drawable/radius_100_9a4_ff4" android:paddingLeft="8.0dp" android:paddingTop="2.0dp" android:paddingRight="8.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新人福利" android:layout_alignBottom="@id/zuan" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/redDot" android:background="@drawable/radius_100_red" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_alignRight="@id/zuan" />
+    </RelativeLayout>
+</RelativeLayout>

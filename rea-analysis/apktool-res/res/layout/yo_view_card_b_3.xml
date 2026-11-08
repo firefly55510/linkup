@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/yo_owner_submit" android:background="@drawable/yo_bg_btn_big_3" android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:text="@string/yo_btn_card" android:maxLines="1" android:layout_marginStart="32.0dp" android:layout_marginEnd="32.0dp" />
+</FrameLayout>

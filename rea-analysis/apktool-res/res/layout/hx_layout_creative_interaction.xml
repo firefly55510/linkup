@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/hx_up_move_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/hx_up_move_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hx_img_wipe_up" />
+    </RelativeLayout>
+    <ImageView android:id="@id/hx_any_move_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hx_img_any_move" />
+    <RelativeLayout android:id="@id/hx_shake_img_container" android:background="@drawable/hx_bg_alpha_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/hx_shake_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hx_img_shake" />
+    </RelativeLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/hx_shake_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="摇一摇手机" android:maxLines="1" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/hx_shake_text_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="摇动下载或跳转至第三方应用" android:maxLines="1" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+</LinearLayout>

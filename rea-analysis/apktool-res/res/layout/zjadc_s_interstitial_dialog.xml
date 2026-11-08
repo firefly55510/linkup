@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zj.ada.open.widget.StarsRoundFrameLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/zjadc_s_interstitial_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/zjadc_s_interstitial_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <com.zj.ada.open.widget.video.StarsVideoView android:layout_gravity="center|top" android:id="@id/zjadc_s_interstitial_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="start|top" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+            <ImageView android:id="@id/zjadc_s_interstitial_sound" android:background="@drawable/zjadc_s_video_btn_bg" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/zjadc_s_video_sound_selector" android:scaleType="centerInside" android:layout_marginStart="16.0dp" />
+            <TextView android:textSize="@dimen/zjadc_s_skip_view_text_size" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/zjadc_s_interstitial_btn_feedback" android:background="@drawable/zjadc_s_skip_view_bg" android:layout_width="wrap_content" android:layout_height="28.0dp" android:text="反馈" android:layout_marginStart="12.0dp" android:paddingHorizontal="16.0dp" />
+        </LinearLayout>
+        <com.zj.ada.open.widget.StarsCountdownImageView android:layout_gravity="end|top" android:id="@id/zjadc_s_interstitial_close" android:background="@drawable/zjadc_s_video_btn_bg" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginTop="16.0dp" android:layout_marginEnd="16.0dp" />
+        <com.zj.ada.open.widget.StarsLogoView android:layout_gravity="start|bottom" android:id="@id/zjadc_s_interstitial_logo_container" android:background="@drawable/zjadc_s_splash_logo_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <include android:layout_gravity="bottom" android:id="@id/zjadc_s_interstitial_bottom_container" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/zjadc_s_bottom_view" />
+    </FrameLayout>
+</com.zj.ada.open.widget.StarsRoundFrameLayout>

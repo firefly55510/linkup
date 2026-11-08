@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/zjadc_s_ad_feedback_root" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_gravity="center" android:id="@id/zjadc_s_ad_feedback_scrollview" android:background="@drawable/zjadc_s_feedback_dialog_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16.0dp" android:layout_marginVertical="24.0dp">
+        <LinearLayout android:orientation="vertical" android:id="@id/zjadc_s_ad_ll_normal_reason" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/zjadc_s_ad_btn_reason_1" android:tag="1" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="内容无法展示（卡顿,黑白屏）" />
+            <View android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="1.0px" android:alpha="0.1" android:layout_marginVertical="12.0dp" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/zjadc_s_ad_btn_reason_2" android:tag="2" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="不感兴趣" />
+            <View android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="1.0px" android:alpha="0.1" android:layout_marginVertical="12.0dp" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/zjadc_s_ad_btn_reason_3" android:tag="3" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="无法关闭" />
+            <View android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="1.0px" android:alpha="0.1" android:layout_marginVertical="12.0dp" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="举报广告" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+                <TextView android:id="@id/zjadc_s_ad_btn_reason_4" android:tag="41" android:background="@drawable/zjadc_s_feedback_gray_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="诱导点击" android:paddingHorizontal="12.0dp" android:paddingVertical="6.0dp" />
+                <TextView android:id="@id/zjadc_s_ad_btn_reason_5" android:tag="42" android:background="@drawable/zjadc_s_feedback_gray_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="低俗色情" android:layout_marginStart="10.0dp" android:paddingHorizontal="12.0dp" android:paddingVertical="6.0dp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+                <TextView android:id="@id/zjadc_s_ad_btn_reason_6" android:tag="43" android:background="@drawable/zjadc_s_feedback_gray_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="疑似抄袭" android:paddingHorizontal="12.0dp" android:paddingVertical="6.0dp" />
+                <TextView android:id="@id/zjadc_s_ad_btn_reason_7" android:tag="44" android:background="@drawable/zjadc_s_feedback_gray_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="违法违规" android:layout_marginStart="10.0dp" android:paddingHorizontal="12.0dp" android:paddingVertical="6.0dp" />
+            </LinearLayout>
+            <View android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="1.0px" android:alpha="0.1" android:layout_marginVertical="12.0dp" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/zjadc_s_ad_btn_reason_8" android:tag="5" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="素材反馈" />
+            <View android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="1.0px" android:alpha="0.1" android:layout_marginVertical="12.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/zjadc_s_ad_btn_reason_other" android:background="@drawable/zjadc_s_feedback_edit_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="10.0dp" android:paddingVertical="6.0dp">
+                <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@android:drawable/ic_menu_edit" />
+                <TextView android:textSize="14.0sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="其他建议" android:layout_marginStart="4.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/zjadc_s_ad_fl_other_reason" android:background="@android:color/white" android:paddingBottom="10.0dp" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp">
+        <ImageView android:id="@id/zjadc_s_ad_btn_back_to_normal_layout" android:padding="12.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/zjadc_s_landing_back" android:scaleType="centerInside" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="反馈原因" />
+        <TextView android:enabled="false" android:textColor="#ff888888" android:gravity="center_vertical" android:layout_gravity="end" android:id="@id/zjadc_s_ad_btn_submit_other_reason" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="提交" />
+        <EditText android:textSize="16.0sp" android:textColor="@android:color/black" android:textColorHint="@android:color/darker_gray" android:id="@id/zjadc_s_ad_et_other_reason" android:background="@drawable/zjadc_s_feedback_edit_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="52.0dp" android:minHeight="40.0dp" android:hint="请输入原因" android:paddingHorizontal="16.0dp" android:paddingVertical="4.0dp" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/dy_brand_loading_view_root_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.dypay.views.DyPayStdLogoLoadingView android:layout_gravity="center" android:id="@id/dy_brand_loading_std_view" android:background="@drawable/dypay_bg_loading_view" android:layout_width="124.0dp" android:layout_height="120.0dp" android:contentDescription="@string/dypay_dy_pay" />
+</FrameLayout>

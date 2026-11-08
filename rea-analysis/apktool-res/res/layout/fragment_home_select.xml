@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-25.0dp" android:src="@drawable/ic_select_bottom" android:adjustViewBounds="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/card_carousel_container" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.scwang.smart.refresh.header.ClassicsHeader android:id="@id/classicsHeader" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/card_recycler_view" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="65.0dp" android:paddingEnd="65.0dp" />
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+        </FrameLayout>
+        <ImageView android:id="@id/button" android:paddingLeft="70.0dp" android:paddingRight="70.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:src="@drawable/ic_home_select_btn" android:adjustViewBounds="true" android:layout_below="@id/card_carousel_container" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_15" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_c" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新用户引导2/2" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_c" android:id="@id/jump_btn" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳过" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/character_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_below="@id/top_layout">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_e" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="你的性格、人设" android:layout_weight="1.0" />
+            <ImageView android:id="@id/character_help" android:visibility="invisible" android:layout_width="60.0dp" android:layout_height="wrap_content" android:src="@drawable/ic_help_write" />
+        </LinearLayout>
+        <EditText android:textSize="16.0sp" android:textColor="@color/white" android:textColorHint="@color/color_a" android:gravity="top" android:id="@id/character_text" android:background="@drawable/radius_10_c3" android:paddingLeft="15.0dp" android:paddingTop="10.0dp" android:paddingRight="15.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:hint="请输入你想要的展示的性格/人设,也可以填写部分内容后点击帮写进行拓展" android:minLines="9" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="25.0dp" android:layout_marginRight="20.0dp" android:layout_below="@id/character_layout">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_e" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="你希望理想外貌偏好" android:layout_weight="1.0" />
+            <ImageView android:id="@id/hobby_help" android:visibility="invisible" android:layout_width="60.0dp" android:layout_height="wrap_content" android:src="@drawable/ic_help_write" />
+        </LinearLayout>
+        <EditText android:textSize="16.0sp" android:textColor="@color/white" android:textColorHint="@color/color_a" android:gravity="top" android:id="@id/hobby_text" android:background="@drawable/radius_10_c3" android:paddingLeft="15.0dp" android:paddingTop="10.0dp" android:paddingRight="15.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:hint="体型风格：纤细清纯、匀称沙漏、高挑御姐、软糯幼态等\n穿搭风格：校园制服、居家温柔、职场干练、纯欲宽松等\n气质底色：干净清纯、清冷禁欲、甜软粘人、腹黑钓系等\n右上角「帮写」：填写部分内容后一键生成完整外貌人设文案" android:minLines="9" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/next_btn" android:background="@drawable/radius_100_796" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="30.0dp" android:text="保存选择" android:layout_alignParentBottom="true" />
+</RelativeLayout>

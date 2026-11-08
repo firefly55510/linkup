@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#70000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/action_feedback" android:background="@drawable/sig_close_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:paddingHorizontal="13.0dp" android:paddingVertical="3.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/action_close" android:background="@drawable/sig_close_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:layout_alignParentEnd="true" android:paddingHorizontal="8.0dp" android:paddingVertical="3.0dp" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:src="@drawable/sig_logo" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/message_window" android:background="@drawable/sig_image_background" android:visibility="gone" android:layout_width="274.0dp" android:layout_height="360.0dp" android:layout_centerInParent="true">
+        <ImageView android:id="@id/status_icon" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginTop="32.0dp" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/status_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="122.0dp" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff676767" android:gravity="center" android:id="@id/status_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/status_title" android:layout_centerHorizontal="true" />
+        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/action_open" android:background="@drawable/sig_shape_rew_action" android:layout_width="218.0dp" android:layout_height="46.0dp" android:layout_marginBottom="48.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

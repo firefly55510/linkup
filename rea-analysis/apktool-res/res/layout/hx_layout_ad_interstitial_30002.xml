@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/hx_black60" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huanxiao.sdk.widget.RatioRelativeLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/content_layout" android:background="@color/hx_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="90.0dp" android:layout_marginRight="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_85">
+        <com.huanxiao.sdk.widget.RatioFrameLayout android:id="@id/middle_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:ratio="1.77">
+            <FrameLayout android:id="@id/media_container" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+                <include android:id="@id/hx_widget_player" android:visibility="gone" layout="@layout/hx_widget_player" />
+                <ImageView android:id="@id/iv_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_mute" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_margin="10.0dp" android:src="@drawable/hx_btn_mute_selector" />
+                <com.huanxiao.sdk.widget.HXImageView android:id="@id/iv_close" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_margin="10.0dp" android:src="@drawable/hx_btn_close" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <com.huanxiao.sdk.widget.HXMagicInteractPanel android:layout_gravity="center" android:id="@id/magic_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.huanxiao.sdk.widget.RatioFrameLayout>
+        <com.huanxiao.sdk.widget.RoundedImageView android:id="@id/iv_icon" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_marginTop="64.0dp" android:layout_below="@id/middle_content" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/hx_black" android:id="@id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_below="@id/iv_icon" android:layout_centerHorizontal="true" />
+        <com.huanxiao.sdk.widget.HXShapeTextView android:textSize="18.0sp" android:textColor="@color/hx_white" android:gravity="center" android:id="@id/button" android:layout_width="match_parent" android:layout_height="47.0dp" android:layout_marginTop="46.0dp" android:layout_marginBottom="120.0dp" android:text="@string/hx_click_jump" android:layout_below="@id/tv_app_name" android:layout_centerHorizontal="true" android:layout_marginHorizontal="22.0dp" app:hx_shape_radius="24.0dp" app:hx_shape_solidColor="#ff3388ff" />
+    </com.huanxiao.sdk.widget.RatioRelativeLayout>
+    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/hx_native_app_info_bottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huanxiao.sdk.widget.ComplianceTextView android:textSize="10.0sp" android:textColor="#99ffffff" android:layout_gravity="bottom" android:id="@id/tv_compliance" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="60.0dp" android:paddingVertical="10.0dp" app:hx_privacy_color="#99ffffff" />
+        <include android:layout_gravity="end|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" layout="@layout/hx_layout_ad_native_flag" />
+    </FrameLayout>
+</FrameLayout>

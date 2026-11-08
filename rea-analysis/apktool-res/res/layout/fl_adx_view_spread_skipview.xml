@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="70.0dp" android:layout_height="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.fl.saas.adx.base.widget.CountDownTextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_skip" android:visibility="gone" android:layout_width="70.0dp" android:layout_height="26.0dp" android:text="跳过 5" app:fl_bg_color="#70000000" app:fl_bg_radius="10.0dp" app:fl_count="5" />
+    <com.fl.saas.adx.base.widget.CircularCountDownView android:id="@id/circle_skip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:fl_centerBackgroundColor="#66000000" app:fl_progressbarBackgroundColor="#33ffffff" app:fl_progressbarColor="#bfffffff" app:fl_strokeWidth="2.0dp" app:fl_textColor="#ffffffff" />
+    <View android:id="@id/v_skip" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_centerInParent="true" />
+</RelativeLayout>

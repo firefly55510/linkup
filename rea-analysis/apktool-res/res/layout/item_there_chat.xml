@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/aiHeadCard" android:layout_width="42.0dp" android:layout_height="42.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="15.0dp" app:cardCornerRadius="100.0dp" app:cardElevation="0.0dp">
+        <ImageView android:id="@id/aiHeadImg" android:layout_width="42.0dp" android:layout_height="42.0dp" android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout android:id="@id/main_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="right|center" android:id="@id/mine" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:layout_marginRight="18.0dp" android:layout_alignParentRight="true">
+            <ProgressBar android:id="@id/loading" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginRight="12.0dp" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/tv_content" android:background="@drawable/radius_10_7da" android:paddingLeft="18.0dp" android:paddingTop="12.0dp" android:paddingRight="18.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你好" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/you" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/you_layout" android:background="@drawable/radius_15_d8d" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:layout_marginTop="18.0dp" android:layout_marginRight="18.0dp">
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/markdownText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/ic_star" android:layout_alignParentRight="true" />
+            <ImageView android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="18.0dp" android:src="@drawable/ic_star2" android:layout_alignBottom="@id/you_layout" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView android:id="@id/mineHeadCard" android:layout_width="42.0dp" android:layout_height="42.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="5.0dp" app:cardCornerRadius="100.0dp" app:cardElevation="0.0dp">
+        <ImageView android:id="@id/mineHeadImg" android:layout_width="42.0dp" android:layout_height="42.0dp" android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sdm_twist_bottom_guide_container" android:background="#66000000" android:clickable="false" android:layout_width="match_parent" android:layout_height="179.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="8.0dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/sdm_twist_phone_icon" android:clickable="false" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/sdm_interaction_twist_icon" android:scaleType="fitCenter" android:contentDescription="@null" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffbebebe" android:gravity="center" android:id="@id/sdm_twist_main_title" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/sdm_g2c_twist_main_title" android:textAlignment="gravity" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffbebebe" android:gravity="center" android:id="@id/sdm_twist_subtitle" android:paddingBottom="6.0dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/sdm_g2c_twist_subtitle" android:textAlignment="gravity" />
+    </LinearLayout>
+</RelativeLayout>

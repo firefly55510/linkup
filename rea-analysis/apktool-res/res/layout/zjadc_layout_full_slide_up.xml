@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zj.ada.ys.biz.loader.view.widget.AdDetectorContainerLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/zjadc_layout_full_slide_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/zjadc_lav_full_slide_up" android:layout_width="80.0dp" android:layout_height="94.0dp" />
+    </com.zj.ada.ys.biz.loader.view.widget.AdDetectorContainerLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/zjadc_layout_slide_up_click" android:background="@drawable/zjadc_bg_ad_full_slide_up" android:layout_width="match_parent" android:layout_height="155.0dp">
+        <TextView android:textSize="18.0sp" android:textColor="@color/zjadc_ad_sdk_white" android:id="@id/zjadc_slide_up_tv" android:layout_width="wrap_content" android:layout_height="32.0dp" android:layout_marginTop="25.0dp" android:text="@string/zjadc_ad_slide_up_click" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/zjadc_ad_sdk_white" android:id="@id/zjadc_content_tv" android:layout_width="wrap_content" android:layout_height="22.0dp" android:text="@string/zjadc_ad_slide_up_click_tip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.beizi.fusion.widget.CustomRoundImageView android:id="@id/bz_notification_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bz_notification_title_container_ll" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_weight="2.0">
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bz_notification_title_tv" android:layout_width="wrap_content" android:layout_height="0.0dp" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bz_notification_desc_tv" android:layout_width="wrap_content" android:layout_height="0.0dp" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/bz_notification_action_container_ll" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/bz_notification_action_tv" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50.0dp" />
+    </LinearLayout>
+</LinearLayout>

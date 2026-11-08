@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@android:color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/dy_pay_webview_title_bar" layout="@layout/dypay_view_standard_titlebar_layout" />
+        <com.ss.android.dypay.webview.DyJsWebView android:id="@id/dy_pay_webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/dy_pay_loading_view" android:background="@drawable/dypay_bg_loading_view" android:visibility="visible" android:layout_width="92.0dp" android:layout_height="76.0dp">
+        <ImageView android:id="@id/dy_pay_iv_loading" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/dypay_icon_loading_circle" />
+        <TextView android:textSize="14.0dp" android:textColor="#e5ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/dypay_being_loaded" />
+    </LinearLayout>
+</FrameLayout>

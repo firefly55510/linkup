@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/complain_dialog_container_rl" android:background="@drawable/asnp_complaint_dialog_shape" android:padding="20.0dp" android:layout_width="280.0dp" android:layout_height="wrap_content">
+        <ImageView android:id="@id/complain_dialog_close_view" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/asnp_complain_dialog_close" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@id/complain_normal_ui" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/complain_dialog_close_view">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/complain_reasons_list_recycleview" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@id/complain_other_suggest_view" android:background="@drawable/asnp_complaint_edittext_bg" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/adscope_dialog_text_hint" android:drawableLeft="@drawable/asnp_complain_edit_suggest" android:drawablePadding="5.0dp" android:layout_below="@id/complain_reasons_list_recycleview" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/complain_other_suggest_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dp" android:id="@id/complain_other_suggest_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="其他投诉" android:layout_centerHorizontal="true" />
+            <View android:id="@id/complain_input_other_divider" android:background="@color/adscope_view_divider_bg" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15.0dp" android:layout_below="@id/complain_other_suggest_title" />
+            <EditText android:textSize="13.0dp" android:gravity="left" android:id="@id/complain_input_other_edittext" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:maxLines="8" android:minLines="8" android:layout_below="@id/complain_input_other_divider" android:textCursorDrawable="@drawable/asnp_complaint_edittext_cursor" />
+            <TextView android:id="@id/complain_other_suggest_number_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:hint="0" android:layout_alignBottom="@id/complain_input_other_edittext" android:layout_marginEnd="10.0dp" android:layout_alignEnd="@id/complain_input_other_edittext" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/complain_other_suggest_submit" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="20.0dp" android:text="提交" android:layout_below="@id/complain_input_other_edittext" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

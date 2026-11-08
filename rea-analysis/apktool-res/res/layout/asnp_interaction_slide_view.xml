@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/guild_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/slide_basic_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/asnp_scrollbar" android:scaleType="matrix" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/slide_guide_icon" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/asnp_hand" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="abd" android:layout_below="@id/guild_layout" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bcd" android:layout_below="@id/main_title" android:layout_centerHorizontal="true" />
+</RelativeLayout>

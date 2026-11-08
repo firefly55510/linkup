@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/goVip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp">
+            <ImageView android:id="@id/banner_iv" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bg_pay_top_banner" android:adjustViewBounds="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffff3b" android:id="@id/countdownTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="5.0dp" android:text="限时倒计时：24：00：00" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffd8d8d8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginBottom="15.0dp" android:text="备好心动币，解锁丰富互动体验" android:layout_alignBottom="@id/banner_iv" />
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:layout_marginBottom="15.0dp" android:layout_alignBottom="@id/banner_iv" android:layout_alignParentRight="true">
+                <ImageView android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/ic_pay_hot" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffffff3b" android:id="@id/peopleNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:text="抢购人数：2000+" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/radius_20_111_top" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="#ffe9e9e9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购买心动币" android:includeFontPadding="false" android:layout_centerVertical="true" android:fontFamily="@font/source_han_serif_cn_heavy" />
+                <ImageView android:id="@id/close" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/beizi_close" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:overScrollMode="never" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffa7a7a7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="28.0dp" android:text="权益说明：\n心动币可用于角色文字聊天、播放角色语音。免费对话额度耗尽后，心动币余额充足将自动扣减对应额度完成对话，消费记录可前往【收支明细】查看。消耗参考：文字对话 10 心动币 / 次；角色语音播放 20 心动币 / 次。" android:lineSpacingExtra="3.0dp" android:letterSpacing="0.08" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

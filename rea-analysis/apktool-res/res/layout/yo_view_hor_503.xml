@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zongliang.sdk.core.view.YoAdvanceLayout android:id="@id/yo_ad_container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:wh_ratio="6.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/yo_advance_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="6.0dp">
+            <com.zongliang.sdk.core.view.YoAdvanceLayout android:layout_gravity="center" android:id="@id/yo_advance_container" android:background="@drawable/yo_bg_trans_radius_4" android:layout_width="wrap_content" android:layout_height="match_parent" app:wh_ratio="1.77" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="#00cd8800" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/yo_owner_title" android:layout_weight="1.0" style="@style/yo_feed_title" />
+                <ImageView android:id="@id/yo_owner_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/yo_logo" android:layout_marginStart="4.0dp" />
+            </LinearLayout>
+            <TextView android:textSize="10.0sp" android:id="@id/yo_owner_summary" style="@style/yo_feed_summary" />
+            <FrameLayout android:id="@id/yo_view_down_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="end|center" android:id="@id/yo_owner_submit" android:background="@drawable/yo_bg_btn_big_3" android:layout_width="70.0dp" android:layout_height="32.0dp" android:text="@string/yo_btn_submit" android:maxLines="1" android:layout_marginStart="12.0dp" android:layout_marginEnd="32.0dp" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/yo_interaction_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.zongliang.sdk.core.view.YoAdvanceLayout>

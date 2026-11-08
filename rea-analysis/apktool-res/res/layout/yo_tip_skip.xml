@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/yo_bg_tip_skip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/yo_tip_icon" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_margin="8.0dp" android:src="@mipmap/yo_tip_gold" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/yo_tip_text" android:layout_width="120.0dp" android:layout_height="wrap_content" android:text="5s后打开应用..." />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/yo_tip_cancel" android:background="@drawable/yo_bg_tip_skip_cancel" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不用了" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+</LinearLayout>

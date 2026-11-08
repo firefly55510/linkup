@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img" android:layout_width="match_parent" android:layout_height="180.0dp" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/lock" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_album_lock" android:layout_centerInParent="true" />
+</RelativeLayout>

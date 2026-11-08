@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center|bottom" android:orientation="vertical" android:background="@drawable/zjadc_s_shake_layout_bg" android:paddingBottom="@dimen/zjadc_s_splash_rotate_view_margin_bottom" android:visibility="visible" android:clickable="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zj.ada.open.widget.StarsRotateView android:layout_gravity="center_horizontal" android:id="@id/zjadc_s_rotate_region_view" android:layout_width="@dimen/zjadc_s_splash_rotate_view_width" android:layout_height="@dimen/zjadc_s_splash_rotate_view_height" android:layout_marginTop="@dimen/zjadc_s_splash_rotate_view_margin_top" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/zjadc_s_rotate_region_native" android:background="@drawable/zjadc_s_splash_actionbar_bg" android:layout_width="match_parent" android:layout_height="@dimen/zjadc_s_splash_actionbar_height" android:layout_marginHorizontal="@dimen/zjadc_s_splash_actionbar_margin_horizontal">
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/zjadc_s_rotate_region_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/zjadc_s_ad_rotate_describe" android:layout_marginStart="5.0dp" />
+    </LinearLayout>
+</LinearLayout>

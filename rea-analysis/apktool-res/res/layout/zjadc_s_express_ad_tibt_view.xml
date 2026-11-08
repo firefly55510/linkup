@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/zjadc_s_express_tibt_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/zjadc_s_express_tibt_material_root" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/zjadc_s_express_tibt_image_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/zjadc_s_express_tibt_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.zj.ada.open.widget.StarsShakeHintView android:layout_gravity="center" android:id="@id/zjadc_s_express_shake_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" />
+            <com.zj.ada.open.widget.erase.EraseImageView android:id="@id/zjadc_s_erase_image_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/zjadc_s_ic_shadow" android:scaleType="fitXY" app:erase_delay_duration="3000" app:erase_paddingLeft="16.0dp" app:erase_paddingTop="16.0dp" app:erase_radius="8.0dp" app:erase_resource="@drawable/zjadc_s_img_erase" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:layout_gravity="end|center" android:id="@id/zjadc_s_earase_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zjadc_s_ad_erase_show_more" android:layout_marginEnd="16.0dp" />
+        </FrameLayout>
+        <ViewStub android:id="@id/zjadc_s_express_tibt_video_view" android:layout="@layout/zjadc_s_express_video_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/zjadc_s_express_tibt_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="5.0dp">
+        <com.zj.ada.open.widget.StarsRoundImageView android:id="@id/zjadc_s_express_tibt_icon" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginEnd="5.0dp" />
+        <TextView android:textSize="@dimen/zjadc_s_express_view_text_size" android:textColor="#ff000000" android:id="@id/zjadc_s_express_tibt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/zjadc_s_express_tibt_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.zj.ada.open.widget.StarsLogoView android:background="@drawable/zjadc_s_splash_logo_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/zjadc_s_express_view_text_smail_size" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/zjadc_s_express_tibt_desc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_marginHorizontal="4.0dp" />
+        <ImageView android:gravity="center_vertical" android:layout_gravity="end|bottom" android:id="@id/zjadc_s_express_tibt_feedback" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/zjadc_s_ic_more" />
+        <ImageView android:id="@id/zjadc_s_express_tibt_close" android:padding="5.0dp" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/zjadc_s_landing_close" />
+    </LinearLayout>
+    <ViewStub android:id="@id/zjadc_s_express_tibt_download_view" android:layout="@layout/zjadc_s_express_download_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

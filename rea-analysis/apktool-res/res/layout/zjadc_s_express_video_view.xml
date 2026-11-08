@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zj.ada.open.widget.StarsRoundFLinearLayout android:gravity="center" android:id="@id/zjadc_s_express_video_frame" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="#ff000000" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/zjadc_s_express_video_land_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <com.zj.ada.open.widget.video.StarsVideoView android:layout_gravity="center" android:id="@id/zjadc_s_express_video_video" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:layout_gravity="end|bottom" android:id="@id/zjadc_s_express_video_control_sound" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="10.0dp" android:src="@drawable/zjadc_s_video_sound_selector" />
+        <com.zj.ada.open.widget.StarsLogoView android:layout_gravity="start|bottom" android:background="@drawable/zjadc_s_splash_logo_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:paddingVertical="2.0dp" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/zjadc_s_express_video_land" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/zjadc_s_express_video_land_operate" android:background="#4d000000" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                <ImageView android:id="@id/zjadc_s_express_video_land_operate_icon" android:layout_width="40.0dp" android:layout_height="40.0dp" />
+                <TextView android:textSize="@dimen/zjadc_s_express_view_text_size" android:textColor="#ffffffff" android:id="@id/zjadc_s_express_video_land_operate_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="5.0dp" />
+                <TextView android:textSize="@dimen/zjadc_s_express_view_text_size" android:textColor="#ffffffff" android:id="@id/zjadc_s_express_video_land_operate_action" android:background="@drawable/zjadc_s_express_operate_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp" android:paddingVertical="2.0dp" />
+            </LinearLayout>
+            <ImageView android:id="@id/zjadc_s_express_video_land_play" android:background="@drawable/zjadc_s_reward_play" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/zjadc_s_express_video_land_replay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+                <TextView android:textSize="@dimen/zjadc_s_express_view_text_size" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zjadc_s_reward_replay" />
+                <ImageView android:background="@drawable/zjadc_s_reward_replay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.zj.ada.open.widget.StarsShakeHintView android:layout_gravity="center" android:id="@id/zjadc_s_express_video_shake_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" />
+    </FrameLayout>
+</com.zj.ada.open.widget.StarsRoundFLinearLayout>

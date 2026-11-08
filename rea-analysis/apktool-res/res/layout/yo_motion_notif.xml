@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:background="@drawable/yo_bg_white_radius" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/yo_owner_img" android:background="@drawable/yo_bg_trans_radius_4" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_margin="10.0dp" android:src="@mipmap/yo_motion_red4" android:scaleType="fitXY" android:contentDescription="image" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:layout_marginStart="60.0dp" android:layout_marginEnd="12.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="#e6000000" android:ellipsize="end" android:id="@id/yo_owner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="福利到账了！！！" android:maxLines="1" android:layout_marginEnd="32.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="#99000000" android:ellipsize="end" android:id="@id/yo_owner_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="快来看看吧..." android:maxLines="1" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff9e9e9e" android:layout_gravity="end|top" android:id="@id/yo_owner_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="刚刚" android:layout_marginEnd="10.0dp" />
+</FrameLayout>

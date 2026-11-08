@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.adx.ui.view.blurview.BSYBlurView android:id="@id/bsyad_plg_blur_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bsyad_plg_root_view" android:background="#7f000000" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.ui.view.BSYAdRoundImageView android:id="@id/bsyad_plg_iv_ad_icon" android:layout_width="80.0dp" android:layout_height="80.0dp" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/bsyad_plg_color_white" android:id="@id/bsyad_plg_tv_ad_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:maxLines="2" android:layout_marginHorizontal="32.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/bsyad_plg_color_white" android:id="@id/bsyad_plg_tv_ad_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:maxLines="2" android:layout_marginHorizontal="32.0dp" />
+        <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.adx.ui.view.AdxPlgClickButton android:textSize="18.0sp" android:textColor="@color/bsyad_plg_color_white" android:gravity="center" android:id="@id/bsyad_plg_tv_action" android:background="@drawable/bsyad_plg_bg_reward_patch_action" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginTop="25.0dp" android:layout_marginHorizontal="50.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/bsyad_plg_iv_patch_close" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginTop="13.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/bsyad_plg_icon_video_detail_close" android:layout_alignParentRight="true" />
+</merge>

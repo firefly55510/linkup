@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/adgain_reward_app_info_layout" android:background="@drawable/adgain_shape_app_info_bg" android:padding="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.adgain.sdk.base.view.gif.GifImageView2 android:layout_gravity="center_vertical" android:id="@id/adgain_reward_app_icon" android:layout_width="60.0dp" android:layout_height="60.0dp" android:scaleType="centerCrop" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dp">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/adgain_reward_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="12.0sp" android:textColor="#ccffffff" android:ellipsize="end" android:id="@id/adgain_reward_app_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="1" />
+        <TextView android:textSize="11.0sp" android:textColor="#99ffffff" android:ellipsize="end" android:id="@id/adgain_reward_app_developer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/umeng_dl_bg_shape" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/um_dl_web_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:gravity="center" android:id="@id/um_dl_web_ib_back" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/umeng_union_lp_back" />
+        <View android:id="@id/um_dl_web_divider" android:background="#1f898c91" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_below="@id/um_dl_web_ib_back" />
+        <View android:id="@id/um_dl_btm" android:background="#fffeffff" android:layout_width="match_parent" android:layout_height="10.0dp" android:layout_alignParentBottom="true" />
+        <WebView android:id="@id/um_dl_web_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/um_dl_btm" android:layout_below="@id/um_dl_web_divider" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/um_dl_app" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/um_dl_iv_app_icon" android:layout_width="72.0dp" android:layout_height="72.0dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="#ff161924" android:id="@id/um_dl_tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="1" android:singleLine="true" android:layout_below="@id/um_dl_iv_app_icon" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/um_dl_app_perms_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dp" android:textColor="#ff2196f3" android:id="@id/um_dl_tv_app_perms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/umeng_dl_app_permissions" />
+                    <View android:layout_gravity="center_vertical" android:id="@id/um_dl_divider" android:background="#ff898c91" android:layout_width="1.0px" android:layout_height="12.0dp" android:layout_marginLeft="22.0dp" android:layout_marginRight="22.0dp" />
+                    <TextView android:textSize="14.0dp" android:textColor="#ff2196f3" android:id="@id/um_dl_tv_app_privacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/umeng_dl_app_privacy" />
+                </LinearLayout>
+                <Button android:textSize="18.0dp" android:textColor="#fffcfefe" android:id="@id/um_dl_btn_action" android:background="@drawable/umeng_dl_btn_bg" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="40.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="40.0dp" android:text="@string/umeng_dl_start" style="?android:borderlessButtonStyle" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/um_dl_app_perms_layout" android:layout_below="@id/um_dl_tv_app_name" android:layout_centerInParent="true">
+                <ScrollView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0dp" android:textColor="#7f161924" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/um_dl_tv_app_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+                        <TextView android:textSize="14.0dp" android:textColor="#7f161924" android:id="@id/um_dl_tv_app_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+                        <TextView android:textSize="14.0dp" android:textColor="#7f161924" android:id="@id/um_dl_tv_app_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+                        <TextView android:textSize="14.0dp" android:textColor="#7f161924" android:id="@id/um_dl_tv_app_owner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+                    </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="end|top" android:id="@id/um_dl_btn_close" android:background="@drawable/umeng_union_lp_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginEnd="12.0dp" />
+    </FrameLayout>
+</FrameLayout>

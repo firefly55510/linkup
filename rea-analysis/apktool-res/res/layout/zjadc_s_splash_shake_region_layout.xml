@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center|bottom" android:orientation="vertical" android:id="@id/zjadc_s_shake_region_root" android:paddingBottom="@dimen/zjadc_s_splash_shake_view_margin_bottom" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/zjadc_s_shake_region_native" android:background="@drawable/zjadc_s_splash_actionbar_bg" android:layout_width="match_parent" android:layout_height="@dimen/zjadc_s_splash_actionbar_height" android:layout_marginHorizontal="@dimen/zjadc_s_splash_actionbar_margin_horizontal">
+        <com.zj.ada.open.widget.StarsShakeView android:gravity="center" android:id="@id/zjadc_s_shake_region_view" android:layout_width="26.0dp" android:layout_height="26.0dp" app:zjadc_s_shake_isDrawCircle="false" />
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/zjadc_s_shake_region_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/zjadc_s_ad_shake_describe" android:layout_marginStart="5.0dp" />
+    </LinearLayout>
+</FrameLayout>

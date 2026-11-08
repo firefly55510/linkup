@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huanxiao.sdk.widget.RatioFrameLayout android:orientation="vertical" android:background="@color/hx_black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huanxiao.sdk.video.AdVideoView android:layout_gravity="center" android:id="@id/hx_video_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/hx_cover_first" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+    <ImageView android:layout_gravity="center" android:id="@id/hx_cover_last" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+    <ProgressBar android:layout_gravity="bottom" android:id="@id/hx_video_progress" android:layout_width="match_parent" android:layout_height="2.0dp" android:progressDrawable="@drawable/hx_video_progress_normal" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <ImageView android:layout_gravity="right|top" android:id="@id/hx_video_mute" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_20" android:src="@drawable/hx_btn_mute_selector" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/hx_video_complete_app_container" android:background="#cc000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/hx_app_icon" android:layout_width="52.0dp" android:layout_height="52.0dp" android:src="@drawable/hx_default_app_icon" />
+        <TextView android:textSize="16.0dp" android:textColor="@android:color/white" android:id="@id/hx_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" />
+        <TextView android:textSize="11.0dp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/hx_app_download" android:background="@drawable/hx_video_install_bg" android:layout_width="64.0dp" android:layout_height="24.0dp" android:layout_marginTop="20.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/hx_video_complete_h5_container" android:background="#cc000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="11.0dp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/hx_h5_open" android:background="@drawable/hx_video_install_bg" android:layout_width="64.0dp" android:layout_height="24.0dp" android:layout_marginTop="14.0dp" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/hx_dataflow_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/hx_dataflow_play_btn" android:layout_width="55.0dp" android:layout_height="55.0dp" android:src="@drawable/hx_video_play" android:layout_centerInParent="true" />
+        <TextView android:textSize="10.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/hx_dataflow_play_tip" android:background="@drawable/hx_video_duration_bg" android:layout_width="39.0dp" android:layout_height="17.0dp" android:layout_marginTop="9.0dp" android:layout_below="@id/hx_dataflow_play_btn" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/hx_error_container" android:background="#cc000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14.0dp" android:textColor="#ffdadada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频加载失败" />
+    </LinearLayout>
+</com.huanxiao.sdk.widget.RatioFrameLayout>

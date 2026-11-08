@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.PlayerView android:id="@id/videoView" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" app:resize_mode="zoom" app:surface_type="texture_view" app:use_controller="false" />
+    <ImageView android:id="@id/img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <TextView android:background="@drawable/shadow_bottom" android:layout_width="match_parent" android:layout_height="160.0dp" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/top_layout" android:paddingTop="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp">
+            <ImageView android:id="@id/back" android:padding="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_back_white" app:layout_constraintBottom_toBottomOf="@id/headMenu" app:layout_constraintTop_toTopOf="@id/headMenu" />
+            <RelativeLayout android:id="@id/headMenu" android:background="@drawable/radius_100_black_a4d" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toEndOf="@id/back">
+                <androidx.cardview.widget.CardView android:id="@id/headImg_card" android:layout_width="35.0dp" android:layout_height="35.0dp" android:layout_margin="5.0dp" app:cardCornerRadius="100.0dp" app:cardElevation="0.0dp">
+                    <ImageView android:id="@id/headImg" android:layout_width="35.0dp" android:layout_height="35.0dp" android:scaleType="centerCrop" />
+                </androidx.cardview.widget.CardView>
+                <LinearLayout android:orientation="vertical" android:id="@id/name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/headImg_card" android:layout_centerVertical="true">
+                    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textColor="#ffe6e8e7" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="" />
+                        <ImageView android:id="@id/gender" android:padding="2.0dp" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_gender_girl" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp">
+                        <ImageView android:id="@id/xin" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginLeft="8.0dp" android:layout_marginTop="1.0dp" android:src="@drawable/ic_gray_xin" />
+                        <TextView android:textSize="11.0sp" android:textColor="#ffdcd7d9" android:id="@id/hotNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:text="0 心动值" android:layout_toRightOf="@id/xin" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:id="@id/exclusive_identity" android:layout_width="50.0dp" android:layout_height="35.0dp" android:layout_marginLeft="3.0dp" android:src="@drawable/ic_exclusive_identity" android:adjustViewBounds="true" android:layout_toRightOf="@id/name_layout" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/addHarem" android:layout_width="60.0dp" android:layout_height="45.0dp" android:src="@drawable/ic_chat_add_harem" android:adjustViewBounds="true" android:layout_toRightOf="@id/exclusive_identity" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/change_model" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_marginRight="8.0dp" android:adjustViewBounds="true" android:layout_alignParentRight="true" app:layout_constraintBottom_toBottomOf="@id/headMenu" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/headMenu" app:layout_constraintTop_toTopOf="@id/headMenu" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:id="@id/top_intimacy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="16.0dp">
+            <ImageView android:id="@id/menu" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_chat_more" />
+            <RelativeLayout android:background="@drawable/radius_100_black_a4d" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                <ProgressBar android:id="@id/intimacyProgressBar" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:max="100" android:progress="10" android:progressDrawable="@drawable/progressbar_chat_intimacy" android:layout_centerInParent="true" style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+                <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:id="@id/intimacy_layout" android:paddingLeft="5.0dp" android:paddingTop="2.0dp" android:paddingRight="8.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dp">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_intimacy_label" />
+                        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/intimacyTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="陌生" />
+                    </LinearLayout>
+                    <TextView android:layout_width="1.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/lookAds" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_chat_lookads" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/top_menu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp">
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/punishmentGame" android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@drawable/ic_chat_menu1" />
+                    <ImageView android:id="@id/groupPhoto" android:layout_width="75.0dp" android:layout_height="75.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/ic_chat_menu2" />
+                    <ImageView android:id="@id/loveRecord" android:layout_width="75.0dp" android:layout_height="75.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/ic_chat_menu3" />
+                    <ImageView android:id="@id/album" android:layout_width="75.0dp" android:layout_height="75.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/ic_chat_menu4" />
+                    <ImageView android:id="@id/intimacyScene" android:layout_width="75.0dp" android:layout_height="75.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/ic_chat_menu5" />
+                    <ImageView android:id="@id/ranking" android:layout_width="75.0dp" android:layout_height="75.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/ic_chat_menu6" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:fadingEdgeLength="50.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_weight="1.0" android:requiresFadingEdge="vertical" />
+        <LinearLayout android:id="@id/bottom_input_layout" android:background="@drawable/shadow_bottom" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:background="@drawable/radius_10_c4" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="15.0dp" android:layout_weight="1.0">
+                <ImageView android:id="@id/change_model2" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_change_model" />
+                <EditText android:textSize="15.0sp" android:textColor="@color/white" android:textColorHint="#ff8e9293" android:id="@id/message_input" android:background="@color/transparent" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="请输入聊天消息..." android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSend" />
+                <ImageView android:id="@id/inspiration" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_more_send" />
+                <ImageView android:id="@id/moreMenu" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="15.0dp" android:src="@drawable/ic_square_add" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_gift" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/ic_gift" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/bottom_menu" android:background="@color/color_15" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:paddingBottom="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/punishmentGameBottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@drawable/ic_chat_bottom_menu1" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="惩罚游戏" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/friendBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                        <ImageView android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@drawable/ic_chat_bottom_menu2" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="朋友圈" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/albumBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                        <ImageView android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@drawable/ic_chat_bottom_menu3" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="私密相册" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/groupPhotoBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                        <ImageView android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@drawable/ic_chat_bottom_menu4" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="合照" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/addHaremBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                        <ImageView android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@drawable/ic_chat_bottom_menu5" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="加入后宫" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/changeClothesBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                        <ImageView android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@drawable/ic_chat_bottom_menu6" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="更衣" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shareBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                        <ImageView android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@drawable/ic_chat_bottom_menu7" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="分享" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/reportBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                        <ImageView android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@drawable/ic_chat_bottom_menu8" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="举报" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/inspiration_layout" android:background="@color/color_15" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:paddingBottom="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center" android:id="@id/inspirationLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="20.0dp" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/inspirationRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

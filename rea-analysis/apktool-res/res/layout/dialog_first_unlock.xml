@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/openImg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <Button android:id="@id/button" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

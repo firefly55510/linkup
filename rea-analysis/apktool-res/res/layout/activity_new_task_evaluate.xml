@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff8f9fb" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="58.0dp">
+        <TextView android:textSize="20.0sp" android:textColor="@color/color_3" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="抖音小红书安利活动" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/back" android:padding="5.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_back" android:layout_centerVertical="true" android:layout_marginStart="5.0dp" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="#fff8f9fb" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/text_evaluate_img1" android:adjustViewBounds="true" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="58.0dp">
+                <ImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_douyin" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="抖音    " android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+                <LinearLayout android:gravity="center" android:id="@id/douyin_layout" android:background="@drawable/radius_100_9a4_ff4" android:paddingLeft="25.0dp" android:paddingTop="3.0dp" android:paddingRight="16.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="前往" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+                    <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/ic_evaluate_next" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/xoaphongshu_layout" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="58.0dp">
+                <ImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_xiaohongshu" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="小红书" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+                <LinearLayout android:gravity="center" android:background="@drawable/radius_100_9a4_ff4" android:paddingLeft="25.0dp" android:paddingTop="3.0dp" android:paddingRight="16.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="前往" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+                    <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/ic_evaluate_next" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/text_evaluate_img2" android:adjustViewBounds="true" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="3.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传截图证明" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffc547ea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="25.0dp" android:overScrollMode="never" android:nestedScrollingEnabled="false" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginTop="8.0dp">
+                <TextView android:textSize="14.0sp" android:textColor="#ff535353" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="需上传" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffa347fa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2张" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff535353" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你发布的评论截图（评论里带" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffa347fa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="平行岛" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff535353" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=")" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="10.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论链接" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffc547ea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/radius_10_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="16.0dp" android:minHeight="42.0dp">
+                <EditText android:textSize="14.0dp" android:textColor="@color/color_3" android:textColorHint="#ffc7c7c7" android:gravity="center_vertical" android:id="@id/share_link" android:background="@color/transparent" android:padding="9.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="长按【粘贴】贴入你发布评论的帖子链接" android:maxLines="4" android:maxLength="1000" android:layout_weight="1.0" android:inputType="textMultiLine" android:imeOptions="actionDone" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/paste" android:background="@drawable/radius_100_9a4_ff4" android:paddingLeft="22.0dp" android:paddingTop="6.0dp" android:paddingRight="22.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:text="粘贴" />
+            </LinearLayout>
+            <TextView android:textSize="17.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/button" android:background="@drawable/selector_new_task_button_color" android:paddingLeft="18.0dp" android:paddingTop="12.0dp" android:paddingRight="18.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="30.0dp" android:text="提交审核，通过得500心动币" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

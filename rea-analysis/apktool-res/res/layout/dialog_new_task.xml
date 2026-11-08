@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bgImg" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bg_new_task_dialog" android:adjustViewBounds="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:background="@drawable/radius_10_white" android:paddingLeft="10.0dp" android:paddingTop="8.0dp" android:paddingRight="10.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp">
+            <ImageView android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_new_task_icon1" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="观看短视频" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff727272" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="奖励" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                    <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_currency" />
+                    <TextView android:textSize="12.0sp" android:textColor="#fff047d8" android:id="@id/taskCoinNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff727272" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="心动币" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/taskButton1" android:background="@drawable/radius_100_9a4_ff4" android:paddingLeft="15.0dp" android:paddingTop="6.0dp" android:paddingRight="15.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去完成" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@drawable/radius_10_white" android:paddingLeft="10.0dp" android:paddingTop="8.0dp" android:paddingRight="10.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="15.0dp">
+            <ImageView android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_new_task_icon2" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注抖音&amp;小红书 官方号" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff727272" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="奖励" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                    <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_currency" />
+                    <TextView android:textSize="12.0sp" android:textColor="#fff047d8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff727272" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="心动币" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/taskButton2" android:background="@drawable/radius_100_9a4_ff4" android:paddingLeft="15.0dp" android:paddingTop="6.0dp" android:paddingRight="15.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去完成" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@drawable/radius_10_white" android:paddingLeft="10.0dp" android:paddingTop="8.0dp" android:paddingRight="10.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="15.0dp">
+            <ImageView android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_new_task_icon3" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论领永久钻石会员" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff727272" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="奖励" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                    <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_currency" />
+                    <TextView android:textSize="12.0sp" android:textColor="#fff047d8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff727272" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="心动币+" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                    <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_zuan" />
+                    <TextView android:textSize="12.0sp" android:textColor="#fff047d8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="永久钻石会员" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/taskButton3" android:background="@drawable/radius_100_9a4_ff4" android:paddingLeft="15.0dp" android:paddingTop="6.0dp" android:paddingRight="15.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去完成" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/radius_10_white" android:paddingLeft="10.0dp" android:paddingTop="8.0dp" android:paddingRight="10.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="20.0dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_new_task_icon4" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布原创笔记赢好礼" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+                        <TextView android:textSize="12.0sp" android:textColor="#ff727272" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="奖励：海量心动币+现金红包+永久钻石vip+绝版头像" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnregular" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/taskButton4" android:background="@drawable/radius_100_9a4_ff4" android:paddingLeft="15.0dp" android:paddingTop="6.0dp" android:paddingRight="15.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去完成" android:includeFontPadding="false" android:fontFamily="@font/sourcehansanscnmedium" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="16.0dp">
+                <ImageView android:layout_width="1.0dp" android:layout_height="wrap_content" android:src="@drawable/ic_new_task_img1" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                <ImageView android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:src="@drawable/ic_new_task_img2" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                <ImageView android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:src="@drawable/ic_new_task_img3" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                <ImageView android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="-3.0dp" android:src="@drawable/ic_new_task_img4" android:adjustViewBounds="true" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/close" android:layout_width="27.0dp" android:layout_height="27.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/dialog_close" android:layout_alignTop="@id/bgImg" android:layout_alignParentRight="true" />
+</RelativeLayout>

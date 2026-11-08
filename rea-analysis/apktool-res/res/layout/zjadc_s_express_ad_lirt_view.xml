@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/zjadc_s_express_lirt_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="35.0">
+        <ImageView android:id="@id/zjadc_s_express_lirt_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <com.zj.ada.open.widget.StarsShakeHintView android:layout_gravity="center" android:id="@id/zjadc_s_express_shake_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" />
+        <com.zj.ada.open.widget.StarsLogoView android:layout_gravity="start|bottom" android:background="@drawable/zjadc_s_splash_logo_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="65.0" android:layout_marginHorizontal="5.0dp">
+        <TextView android:textSize="@dimen/zjadc_s_express_view_text_size" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/zjadc_s_express_lirt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/zjadc_s_express_view_text_smail_size" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/zjadc_s_express_lirt_desc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <ImageView android:id="@id/zjadc_s_express_lirt_feedback" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/zjadc_s_ic_more" />
+            <ImageView android:id="@id/zjadc_s_express_lirt_close" android:padding="4.0dp" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/zjadc_s_landing_close" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

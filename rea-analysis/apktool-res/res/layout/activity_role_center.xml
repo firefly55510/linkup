@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff15141a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@id/info_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/bg_img" android:layout_width="match_parent" android:layout_height="500.0dp" android:scaleType="centerCrop" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/shadow_bottom_1514" android:paddingTop="50.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/bg_img">
+                    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp">
+                        <TextView android:textSize="24.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="" android:maxLines="2" android:maxEms="6" android:layout_toRightOf="@id/headImg_card" />
+                        <ImageView android:id="@id/gender" android:padding="1.0dp" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_gender_girl" android:layout_toRightOf="@id/name" android:layout_alignTop="@id/name" android:layout_alignBottom="@id/name" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/startChat" android:background="@drawable/radius_100_ac7_774" android:paddingLeft="10.0dp" android:paddingTop="3.0dp" android:paddingRight="10.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="开始聊天" android:layout_weight="1.0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/changeName" android:background="@drawable/radius_100_ac7_774" android:paddingLeft="10.0dp" android:paddingTop="3.0dp" android:paddingRight="10.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="专属身份" android:layout_weight="1.0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/addHarem" android:background="@drawable/radius_100_ac7_774" android:paddingLeft="10.0dp" android:paddingTop="3.0dp" android:paddingRight="10.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="加入后宫" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/radius_10_white_20_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp">
+                        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="100.0dp" android:layout_height="wrap_content" android:src="@drawable/ic_role_intimacy_title" android:adjustViewBounds="true" />
+                            <TextView android:layout_width="1.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+                            <ImageView android:id="@id/intimacyExplanation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:src="@drawable/ic_role_explanation" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="15.0dp">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/currentIntimacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LV." />
+                            <ProgressBar android:id="@id/intimacyProgressBar" android:layout_width="match_parent" android:layout_height="12.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/progressbar_role_intimacy" android:layout_weight="1.0" android:layout_centerInParent="true" style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/nextIntimacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LV." />
+                        </LinearLayout>
+                        <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="20.0dp">
+                            <LinearLayout android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/ic_intimacy_type1" />
+                                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/intimacyType1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="" />
+                                </LinearLayout>
+                                <TextView android:id="@id/progress1" android:background="#ff9faad5" android:layout_width="32.0dp" android:layout_height="3.0dp" android:layout_marginTop="22.0dp" />
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/ic_intimacy_type2" />
+                                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/intimacyType2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="" />
+                                </LinearLayout>
+                                <TextView android:id="@id/progress2" android:background="#ff9faad5" android:layout_width="32.0dp" android:layout_height="3.0dp" android:layout_marginTop="22.0dp" />
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/ic_intimacy_type3" />
+                                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/intimacyType3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="" />
+                                </LinearLayout>
+                                <TextView android:id="@id/progress3" android:background="@color/color_5" android:layout_width="32.0dp" android:layout_height="3.0dp" android:layout_marginTop="22.0dp" />
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/ic_intimacy_type4" />
+                                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/intimacyType4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="" />
+                                </LinearLayout>
+                                <TextView android:id="@id/progress4" android:background="@color/color_5" android:layout_width="32.0dp" android:layout_height="3.0dp" android:layout_marginTop="22.0dp" />
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/ic_intimacy_type5" />
+                                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/intimacyType5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="" />
+                                </LinearLayout>
+                                <TextView android:id="@id/progress5" android:background="@color/color_5" android:layout_width="32.0dp" android:layout_height="3.0dp" android:layout_marginTop="22.0dp" />
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/ic_intimacy_type6" />
+                                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/intimacyType6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="" />
+                                </LinearLayout>
+                                <TextView android:id="@id/progress6" android:background="@color/color_5" android:layout_width="32.0dp" android:layout_height="3.0dp" android:layout_marginTop="22.0dp" />
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/ic_intimacy_type7" />
+                                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/intimacyType7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="" />
+                                </LinearLayout>
+                                <TextView android:id="@id/progress7" android:background="@color/color_5" android:layout_width="32.0dp" android:layout_height="3.0dp" android:layout_marginTop="22.0dp" />
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/ic_intimacy_type8" />
+                                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/intimacyType8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tab_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/info_layout" android:layout_centerHorizontal="true">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tab_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/tv_tab_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关于Ta" />
+                    <View android:id="@id/indicator_tab_info" android:background="@color/color_7a6" android:layout_width="26.0dp" android:layout_height="2.0dp" android:layout_marginTop="4.0dp" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tab_intimacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="#ffbab9be" android:id="@id/tv_tab_intimacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提升亲密度" />
+                    <View android:id="@id/indicator_tab_intimacy" android:background="@color/color_7a6" android:visibility="invisible" android:layout_width="26.0dp" android:layout_height="2.0dp" android:layout_marginTop="4.0dp" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tab_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="#ffbab9be" android:id="@id/tv_tab_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="私密相册" />
+                    <View android:id="@id/indicator_tab_album" android:background="@color/color_7a6" android:visibility="invisible" android:layout_width="26.0dp" android:layout_height="2.0dp" android:layout_marginTop="4.0dp" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tab_friend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp">
+                    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16.0sp" android:textColor="#ffbab9be" android:id="@id/tv_tab_friend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="朋友圈" />
+                        <ImageView android:id="@id/iv_tab_friend_lock" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="4.0dp" android:src="@drawable/ic_role_friend_lock" />
+                    </LinearLayout>
+                    <View android:id="@id/indicator_tab_friend" android:background="@color/color_7a6" android:visibility="invisible" android:layout_width="26.0dp" android:layout_height="2.0dp" android:layout_marginTop="4.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@id/frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/tab_layout" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:gravity="center" android:paddingTop="40.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp">
+        <ImageView android:id="@id/back" android:padding="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_back_white" />
+        <TextView android:layout_width="1.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+        <ImageView android:id="@id/more" android:padding="5.0dp" android:layout_width="35.0dp" android:layout_height="35.0dp" android:src="@drawable/ic_role_more" />
+    </LinearLayout>
+</RelativeLayout>

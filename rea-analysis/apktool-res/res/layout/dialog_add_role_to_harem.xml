@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/main_ll" android:background="@drawable/radius_12_1d1_2a2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dp" android:layout_marginTop="80.0dp" android:layout_marginRight="35.0dp" android:layout_marginBottom="120.0dp" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/radius_12_e6c" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5.0dp">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_star" app:layout_constraintStart_toStartOf="@id/main_ll" app:layout_constraintTop_toTopOf="@id/main_ll" />
+    <ImageView android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="-20.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/ic_star3" android:layout_alignTop="@id/main_ll" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/main_ll" />
+    <ImageView android:id="@id/back" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/ic_close" android:layout_below="@id/main_ll" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/main_ll" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

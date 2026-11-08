@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/adgain_shape_auto_open_bg" android:paddingLeft="10.0dp" android:paddingTop="12.0dp" android:paddingRight="10.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginRight="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.adgain.sdk.base.view.gif.GifImageView2 android:id="@id/adgain_open_ad_image" android:layout_width="33.0dp" android:layout_height="33.0dp" android:scaleType="centerCrop" android:layout_marginEnd="7.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/adgain_open_ad_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="秒后打开广告" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="5.0dp" />
+    <Button android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/adgain_open_ad_button" android:background="@drawable/adgain_shape_auto_open_btn" android:layout_width="65.0dp" android:layout_height="32.0dp" android:text="不用了" />
+</LinearLayout>

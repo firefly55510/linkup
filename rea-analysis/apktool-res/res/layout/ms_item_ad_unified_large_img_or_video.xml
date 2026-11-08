@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/native_ad_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/ad_info_container_top" android:background="#ffffffff" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ad_info_container_top_icon" android:visibility="gone" android:layout_width="50.0dp" android:layout_height="50.0dp" android:scaleType="centerCrop" />
+            <TextView android:textColor="#e0000000" android:ellipsize="end" android:id="@id/ad_info_container_top_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="6.0dp" android:layout_toEndOf="@id/ad_info_container_top_icon" />
+            <TextView android:textColor="#a0000000" android:ellipsize="end" android:id="@id/ad_info_container_top_text_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/ad_info_container_top_text_title" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" android:layout_toEndOf="@id/ad_info_container_top_icon" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/large_img_or_video_container" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@id/video_controls" android:background="#80000000" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/button_play" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="播放" android:layout_weight="1.0" />
+                    <Button android:enabled="false" android:id="@id/button_replay" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="重播" android:layout_weight="1.0" />
+                    <Button android:id="@id/button_mute" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="静音" android:layout_weight="1.0" />
+                    <Button android:id="@id/button_unmute" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="取消静音" android:layout_weight="1.0" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/api_media_view" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </LinearLayout>
+            <ImageView android:id="@id/img_poster" android:background="@color/demo_black" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:contentDescription="广告图片" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/native_3img_ad_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/img_1" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="1.0dp" android:scaleType="centerCrop" android:layout_weight="1.0" />
+                <ImageView android:id="@id/img_2" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="1.0dp" android:scaleType="centerCrop" android:layout_weight="1.0" />
+                <ImageView android:id="@id/img_3" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="1.0dp" android:scaleType="centerCrop" android:layout_weight="1.0" />
+            </LinearLayout>
+        </FrameLayout>
+        <RelativeLayout android:id="@id/ad_info_container_bottom" android:background="#ffffffff" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#e0000000" android:ellipsize="end" android:id="@id/ad_info_container_bottom_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="6.0dp" />
+            <TextView android:textColor="#a0000000" android:ellipsize="end" android:id="@id/ad_info_container_bottom_text_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/ad_info_container_bottom_text_title" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/close_button" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_margin="12.0dp" android:src="@drawable/ad_close" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

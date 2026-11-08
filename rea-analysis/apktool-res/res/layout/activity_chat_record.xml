@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_1e1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bg_ranking_top" android:adjustViewBounds="true" />
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/topView" android:padding="5.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+            <ImageView android:id="@id/name_tv" android:layout_width="wrap_content" android:layout_height="35.0dp" android:src="@drawable/ic_chat_record_title" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/back" android:padding="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_back_white" />
+            <ImageView android:id="@id/btn_feedback" android:visibility="invisible" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/ic_feedback" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.scwang.smart.refresh.header.ClassicsHeader android:id="@id/classicsHeader" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.scwang.smart.refresh.footer.ClassicsFooter android:id="@id/classicsFooter" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</RelativeLayout>

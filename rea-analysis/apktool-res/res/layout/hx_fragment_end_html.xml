@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huanxiao.sdk.widget.ADWebView android:id="@id/webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/v_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.5dp" android:layout_marginRight="@dimen/dp_15" layout="@layout/hx_layout_close" />
+</FrameLayout>

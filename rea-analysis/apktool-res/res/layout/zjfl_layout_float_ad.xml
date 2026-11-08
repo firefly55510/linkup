@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zj.adb.view.RoundedCornerLayout android:id="@id/roundedCornerLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/ivImg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <ImageView android:id="@id/ivAdIcon" android:visibility="gone" android:layout_width="45.0dp" android:layout_height="15.0dp" android:layout_marginBottom="6.0dp" android:src="@drawable/ad_sdk_icon" android:scaleType="fitCenter" android:layout_alignBottom="@id/ivImg" android:layout_marginStart="8.0dp" android:layout_alignStart="@id/ivImg" />
+        <ImageView android:id="@id/btnClose" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginTop="6.0dp" android:src="@mipmap/ad_sdk_icon_close" android:layout_marginEnd="8.0dp" android:layout_alignParentEnd="true" />
+        <LinearLayout android:gravity="center" android:background="@drawable/zjfl_float_ad_shape_corner" android:layout_width="wrap_content" android:layout_height="25.0dp" android:layout_marginTop="6.0dp" android:minWidth="48.0dp" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/btnClose" android:paddingHorizontal="8.0dp">
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvCloseTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minEms="1" android:includeFontPadding="false" />
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="s" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llPopClick" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dp" android:layout_alignBottom="@id/ivImg" android:layout_marginEnd="8.0dp" android:layout_alignParentEnd="true" android:paddingVertical="5.0dp">
+            <ImageView android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/ad_sdk_icon_click_open" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即打开" android:layout_marginStart="5.0dp" />
+        </LinearLayout>
+    </com.zj.adb.view.RoundedCornerLayout>
+</RelativeLayout>

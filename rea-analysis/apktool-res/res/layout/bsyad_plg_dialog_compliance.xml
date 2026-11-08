@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bsyad_plg_ll_content" android:background="@drawable/bsyad_plg_bg_compliance_info" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bsyad_plg_iv_close" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="16.0dp" android:src="@mipmap/bsyad_plg_icon_close" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/syad_tv_title" android:layout_width="match_parent" android:layout_height="48.0dp" android:maxLines="1" android:layout_marginHorizontal="60.0dp" />
+    </RelativeLayout>
+    <com.beizi.fusion.asnp.adn.ad.plugin.pfg.sy.adsdk.ui.view.AdWebView android:id="@id/syad_webview" android:background="@color/bsyad_plg_color_white" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+</LinearLayout>

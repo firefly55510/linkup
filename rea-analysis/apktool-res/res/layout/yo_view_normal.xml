@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/yo_ad_container" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/yo_advance_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.zongliang.sdk.core.view.YoAdvanceLayout android:layout_gravity="center" android:id="@id/yo_advance_container" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="100.0dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/yo_interaction_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

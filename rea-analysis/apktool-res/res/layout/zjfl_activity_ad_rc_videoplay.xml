@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rootView" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SurfaceView android:id="@id/videoView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/layoutTop" />
+    <ImageView android:id="@id/ivCover" android:background="#ff000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/layoutTop" />
+    <RelativeLayout android:id="@id/layoutTop" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_voice" android:visibility="visible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@mipmap/ad_sdk_volume_open" android:layout_marginStart="30.0dp" android:layout_marginVertical="16.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/layoutJump" android:background="@drawable/rc_ad_shape_corner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:paddingStart="8.0dp" android:paddingEnd="5.0dp" android:layout_marginEnd="30.0dp" android:layout_marginVertical="16.0dp" android:paddingVertical="5.0dp">
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvSkip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳过 | " />
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_close_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:minEms="2" android:includeFontPadding="false" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/ivLogo" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="3.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutClick" android:background="@drawable/zjfl_bg_download_dialog" android:padding="40.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginHorizontal="30.0dp">
+        <ImageView android:id="@id/ivEndCard" android:layout_width="45.0dp" android:layout_height="45.0dp" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/tvEndCardTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:maxLines="1" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center" android:id="@id/tvEndCardDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="2" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center_horizontal" android:id="@id/btnEndCard" android:background="@drawable/zjfl_end_card_click_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="点击跳转" android:paddingVertical="8.0dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/zjadc_s_splash_slideView" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/zjadc_s_splash_bg_slide" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.zj.ada.open.widget.StarsSlideView android:layout_gravity="center_horizontal" android:id="@id/zjadc_s_slide_view" android:layout_width="100.0dp" android:layout_height="160.0dp" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/zjadc_s_splash_slide_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="向上滑动" android:shadowColor="#66000000" android:shadowDy="2.0" android:shadowRadius="4.0" />
+        <TextView android:textSize="14.0dp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/zjadc_s_splash_slide_actiontext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="140.0dp" android:text="跳转至第三方应用" android:shadowColor="#66000000" android:shadowDy="2.0" android:shadowRadius="4.0" />
+    </LinearLayout>
+</LinearLayout>
